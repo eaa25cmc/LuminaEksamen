@@ -264,29 +264,6 @@ h1 {
   color: var(--farve_mørkebrun);
 }
 
-/* free tote bag  */
-#FreeTote {
-  height: 40px;
-  align-content: center;
-  background-color: var(--farve_mørkebrun);
-}
-
-a {
-  color: var(--farve_moonlightwhite);
-  margin-left: 40px;
-  font-family: "Jura", sans-serif;
-}
-
-/* topNav */
-#topNav a {
-  text-decoration: none;
-  font-size: 1.6em;
-}
-
-title {
-  color: var(--farve_moonlightwhite);
-}
-
 /* Hero start */
 
 header {
@@ -302,18 +279,15 @@ header {
 }
 
 /*læg teksten i midten vertikalt og horisontalt*/
-title {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 #topNav {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
   margin-left: 40px;
   margin-right: 32px;
-  height: 200px;
+  margin-bottom: 0px;
+  height: 136px;
   background-color: linear-gradient(to top, transparent, #282119);
 }
 
@@ -322,24 +296,22 @@ title {
 }
 
 .HeroTekst {
-  height: 250px;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 120px;
+  height: 142px;
+  width: 523px;
+  margin-left: 160px;
+  margin-top: 104px;
   color: var(--farve_moonlightwhite);
 }
 
 .heroundertekst {
-  margin-left: 5px;
-  margin-top: 10px;
+  height: 92;
+  width: 523px;
+  margin-top: 8px;
 }
 
 .button1,
 .button-button2 {
+  margin-top: 32px;
   background-color: var(--farve_mørkebrun);
   border: none;
   color: var(--farve_moonlightwhite);
