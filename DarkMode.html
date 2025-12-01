@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jura:wght@300&display=swap');
+
+</style>
+  <title>Lumina one</title>
+  <link rel="stylesheet" href="css/DarkMode.css">
+
+</head>
+<body>
+
+<section id="FreeTote">
+  <a class="xx" href="x">Buy a Lumina one and get a free tote bag</a>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<header>
+  <br>
+<nav id="topNav">
+  <div class="Menu">
+      <a href="x"> ☰ Menu</a>
+  </div>  
+     <!-- Logo i midten -->
+  <div id="TopLogo">
+    <img src="images/Logo.png" alt="Logo" width="175px" height="65px">
+  </div>
+
+  <!-- symboler: person, søg, kurv --> 
+  <div>
+    <article><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+   <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+   <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e3e3e3"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
+    </article>
+  </div>
+
+</nav>
+
+
+<section class="HeroTekst">
+  <h1>Turn music into moments</h1>
+  <aside class="heroundertekst">
+  <h3>Live it together.</h3>
+  <h3>Play it louder.</h3>
+  </aside>
+
+ <!--lavet d. 17/09-->
+  <button class="button button1">BUY NOW</button>
+
+
+</section>
+
+<!-- Rounded switch 17/09-->
+ <Section id="slider">
+
+    <label class="switch">
+     <input type="checkbox" id="toggleSwitch">
+      <span class="slider round"></span>
+      
+  </label>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('toggleSwitch');
+  const filename = window.location.pathname.split('/').pop().toLowerCase();
+
+  // Initial tilstand
+  if (filename === 'darkmode.html') {
+    toggle.checked = true;
+  } else {
+    toggle.checked = false;
+  }
+
+  toggle.addEventListener('change', function () {
+    if (this.checked) {
+      window.location.href = 'DarkMode.html';
+    } else {
+      window.location.href = 'index.html';
+    }
+  });
+});
+</script>
+<article id="pil"> 
+  <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+</article>
+</Section>
+</header>
+
+
+
+
+
+
+  <main>
+
+
+<!--1. sektion med LUMINA one-->
+  <section id="sektionProdukt">
+
+<!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
+ <div class="container-a">
+
+    <img class="billede1"
+        src="images/SortHøjtalerForfra.png"
+        alt="Lumina sort" width="150px" height="250px">
+    
+
+
+  <!--tekstgrupperingen-->
+    <div class="Luminadagen">
+
+      <h5>Lumina one</h5>
+      <h2>Portable Bluetooth Speaker</h2>
+      <br>
+       <p>Big sound, sleek design, and up to 18 hours of</p>
+       <p>playtime. With customizable ambient lighting,</p> 
+       <p>Bluetooth 5.3 connectivity, and IPX5 water resistance,</p>
+       <p>LUMINA one is your perfect companion for beach days,</p>
+       <p> park picnics, or cozy nights.</p>
+       <br>
+       
+       <!--stjerner til trustpilot-->
+       <img
+       src="images/Stjerner.png"
+       alt="stjerner"
+       class="stjerner">
+       <h5>Over 3K reviews on Trustpilot</h5>
+
+       <!--Ny gruppe med vandrette linjer-->
+        <div class="vandret-linje"></div>
+
+        <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
+        <section class="farvevalg">
+       <p>Moonlight white </p>
+        
+       <aside>
+        <img
+       src="images/farver.png"
+       alt="farver"
+       class="image"></aside>
+       </section>
+       
+      <!--Ny vandret linje-->
+       <div class="vandret-linje"></div>
+
+
+      <!--CTA knap  og pris til køb-->
+       <button class="button-button2">ADD TO CART </button>
+       <span class="tekst">1.995 kr.</span>   
+  </div>
+</div>
+</section>
+
+
+
+
+
+<section id="sektionFeatures">
+  <!--2. sektion med features-->
+
+  <!--Der laves to grupperinger, som er flex og video. -->
+<div class="flex-container">
+  <!--Her er en undergruppering-->
+  <div class="text-content">
+      <h5>LUMINA one</h5>
+    <h2>Features</h2>
+    <br>
+    <section class="features"> 
+        <div class="vandret-linje"></div>
+          <div class="feature"><h4>Sound</h4><span class="plus-icon"></span></div>
+      
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Design</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Power</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+        <div class="feature"><h4>Social connection</h4><span class="plus-icon"></span></div>
+       <div class="vandret-linje"></div>
+      </section>
+  </div>
+<!--Anden gruppering ses-->
+  <div class="video-content" controls poster="poster.jpg">
+    <video src="images/REC-20250918133532.mov" type="video/mp4" autoplay loop
+    width="700px" height="620px"> 
+
+</video>  
+</div>
+</section>
+
+
+
+
+<!-- Luminate yourself -->
+<section id="LuminateYourselfSektion">
+  <section>
+  <br><br><br>
+  <section class="SHARE">
+  <h4>SHARE WITH US</h4>
+  <h1>Luminate yourself</h1>
+  <p>Shared moments make life meaningful. With LUMINA ONE, music becomes the heartbeat of every </p>
+  <p>gathering — bringing people closer and turning simple get-togethers into unforgettable memories.</p>
+  <br><br>
+  <h4>Tag us at @Lumina on Instagram to share your moment!</h4>
+  </section>
+  </section>
+
+  <section class="Luminatesektion"> 
+
+  <div class="karrusel">
+    <div class="slides">
+    <img src="images/luminateboardgame.png" alt="img1">
+    <img src="images/ISengen.png" alt="img2">
+    <img src="images/Girlsnight_square.png" alt="img3">
+    <img src="images/PaaStranden.png" alt="img4">
+    <img src="images/Kvindemedspeaker.png" alt="img5">
+    <img src="images/Lumina_night_rooftop_square.png" alt="img6">
+    <img src="images/Lumina_day_pige_hygge_square.png" alt="img7">
+    </div>
+  </div>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
+  
+
+
+<!--3. sektion-->
+<section id="sektionGave">
+ <div class="container-b">
+
+  <!-- Billede af Lumina one i gavekassen-->
+    <img id="gave"
+        src="images/luminagiftdark.png"
+        alt="LuminaOneSomGave" 
+        width="800">
+        
+ 
+
+    <div class="Luminagave">
+
+    <h5>LUMINA one</h5>
+    <h2>The one perfect gift</h2>
+    <br>
+       <p>Looking for something that is both stylish and </p>
+       <p>meaningful? Lumina One is the perfect choice. With </p> 
+       <p>
+        powerful sound, elegant Scandinavian design, and up</p>
+       <p>to 18 hours of playtime, it is as practical as it is </p>
+       <p> beautiful. The subtle LED light ring creates a cozy </p>
+       <p>atmosphere, while Bluetooth 5.3 and water resistance</p>
+       <p>make it ready for parties, beach days, or quiet nights in.</p>
+
+       <br>
+       <p id="bold">For all the moments that deserve a soundtrack</p>
+
+       <!-- Vandret linje til opdeling samt billede af farvevalg til højtaleren-->
+        <div class="vandret-linje"></div>  
+      
+    <section class="farvevalg">
+       <p>Moonlight white </p>
+        
+       <aside>
+        <img
+       src="images/farver.png"
+       alt="farver"
+       class="image"></aside>
+       </section>
+       
+      
+       <!-- Vandret linje igen og knap med pris i sektion 1,2 og 3. -->
+       <div class="vandret-linje"></div>
+
+       <button class="button-button2">ADD TO CART </button>
+       <span class="tekst">1995 kr.</span>
+
+       
+  </div>
+</div>
+<br>
+</section>
+
+
+  
+  <div class="footer">
+    <div class="col-1">
+      <h3>CUSTOMER CARE</h3>
+      <a href="#">Shipping and delivery</a>
+      <a href="#">Returns</a>
+      <a href="#">Produkt support</a>
+      <a href="#">Contact us</a>
+      <a href="#">FAQ</a>
+      <a href="#">Find store</a>
+
+      <br> <br> <br> <br>
+
+      <h3>SOCIAL LINKS</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">X</a>
+      <a href="#">Youtube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Pinterest</a>
+    </div>
+
+ 
+
+    <div class="col-2">
+      <h3>OUR COMPANY</h3>
+      <a href="#">Accessibility</a>
+      <a href="#">Counterfeit</a>
+      <a href="#">Change cookie settings</a>
+      <a href="#">Cookie policy</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Policies and terms</a>
+
+      <br> <br> <br> <br>
+
+      <h3>DOWNLOAD OUR APP</h3>
+      <a href="#">Discover LUMINA</a>
+    </div>
+
+
+
+    <div class="col-3">
+      <h3>OUR POLICIES</h3>
+      <a href="#">Sustainability</a>
+      <a href="#">Investors</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+      <a href="#">Custom integration</a>
+      <a href="#">Become a sales partner</a>
+      <a href="#">Contact us</a>
+    </div>
+
+
+      <div class="col-4">
+        <h3>INTERNATIONAL</h3>
+        <a href="#">English</a>
+          <div class="copyright">
+            <p> © LUMINA AUDIO 2025</p>
+          </div>
+       </div>
+
+     
+  </div>
+
+
+
+
+
+
+
+
+
+  </main>
+  <script src="js/js.js"></script>
+
+</html>
+</body>

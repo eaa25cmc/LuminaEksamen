@@ -1,0 +1,783 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--farve_mørkebrun);
+}
+
+
+/* Design system */
+
+/* Farver */
+:root{
+--farve_mørkebrun: #282119; 
+--farve_mørkeorange: #a54d27; 
+--farve_beige: #e5d8bd; 
+--farve_moonlightwhite: #fffdf2; 
+
+--farve_brun: #65371f; 
+--farve_orange: #c97338; 
+
+}
+
+/* Design system */
+
+/* Tekst udseende*/
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;} */
+
+  /* font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+h1{ 
+   font-family: "Jura", sans-serif;
+   font-size: 3.6em;
+   font-weight: 500;
+
+}
+
+h2{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal; 
+
+}
+h3{
+  font-family: "Jura", sans-serif;
+   font-size: 1.8em;
+   font-weight: 300;
+   
+}
+
+h4{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5{
+   font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+p{
+     font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* free tote bag  */
+#FreeTote{
+  height: 40px;
+  align-content: center;
+  background-color: var(--farve_mørkebrun);
+}
+
+a{
+  color: var(--farve_moonlightwhite);
+   margin-left: 40px;
+  font-family: "Jura", sans-serif;
+}
+
+
+
+/* topNav */
+#topNav a{
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+title{
+  color: var(--farve_moonlightwhite);
+}
+
+
+
+
+
+
+
+/* Hero start */
+
+header {
+  height: 100vh;
+  background-color: var(--farve_moonlightwhite);
+
+  /* Herobilledet i baggrunden*/
+  background-image: url('../images/herodark.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*læg teksten i midten vertikalt og horisontalt*/
+title {
+display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#topNav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 200px;
+  background-color: linear-gradient(to top, transparent, #282119)
+}
+
+.HeroTekst{
+  height: 250px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items:flex-start;
+  margin-left: 120px;
+  color: var(--farve_moonlightwhite);
+}
+
+.heroundertekst{
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.button1 {
+  background-color: var(--farve_moonlightwhite);
+  border: none;
+  color: var(--farve_mørkebrun);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 30px 0px;
+  font-family: "Jura", sans-serif; ;
+  box-shadow:0 0 8px #65371f;
+  margin-left: -2px;
+}
+
+/* runde kanter på knap */
+.button1 {border-radius: 50px;}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position:absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--farve_mørkebrun);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--farve_moonlightwhite);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--farve_mørkeorange);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px var(--farve_mørkeorange);
+  
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Slider position på siden */
+#slider {
+  height: 300px;
+  position: relative;
+}
+
+#slider {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+#pil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--farve_moonlightwhite);
+}
+
+/* Hero slut */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Sektion*/
+#sektionProdukt{
+  width: 100%;
+  height: 700px;
+  background-color: var(--farve_mørkebrun);
+  color: var(--farve_moonlightwhite);
+  
+}
+
+.billede1{
+  display: block;
+  box-shadow: 0 6px 20px #a54d27(0,0,0,0.2);
+}
+/*placering af billede*/
+.container-a img {
+  flex: 0 0 30%;  /* billedet tager 25% af bredden */
+  width: 300;
+  max-width: 100%; 
+  height: auto;
+
+}
+
+
+
+.container-a {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 200px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+}
+
+
+/*størrelse på stjerner og farvepalette*/
+.container-a img {
+  width: 100px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+  margin-left: -8px;
+}
+.farvevalg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*afrunding af hjørner på højtaler*/
+.container-a img {  border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
+  box-shadow: 0 0px 20px #e5d8bd(0,0,0,0.2);
+}
+
+
+
+/*CTA knap i sektion 1 og 3*/
+.button-button2 {
+  background-color: var(--farve_moonlightwhite);
+  border: none;
+  color: var(--farve_mørkebrun);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 30px 0px;
+  font-family: "Jura", sans-serif; ;
+}
+
+/*Knap bliver rund*/
+.button-button2 {border-radius: 50px;}
+
+
+/*Mellemrum mellem knap og pris*/
+ .button-button2 {
+          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
+        }
+ .tekst {
+          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
+          font-family: "Jura", sans-serif;
+          font-size: 1.2em;
+        }
+
+
+/*Vandrette linjer i både sektion 1, 2 og 3*/
+.vandret-linje {
+        border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en sort linje */
+        margin: 10px 0; /* Tilføj lidt plads over og under */
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Sektion */
+#sektionFeatures{
+  width: 100%;
+  height: 700px;
+  background-color: var(--farve_mørkebrun);
+  color: var(--farve_moonlightwhite)
+}
+
+.flex-container {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: space-between; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 0px;              /* afstand mellem billede og tekst */
+  min-height: 100vh;       /* så det kan centreres lodret */
+  margin-left: 150px;
+  margin-right: 150px;
+}
+video{
+  margin-left: -150px;
+}
+.video-content{
+  width: 400px;
+  max-width: 500px;
+  height: 590px;
+  display: block;
+  border-radius: 90px;    /* ændr efter behov */
+  overflow: hidden;       /* forsikrer at indholdet bliver klippet */
+  box-shadow: 0 0px 5px #e5d8bd(0,0,0,0.2);
+  object-fit:none;      /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
+}
+
+
+.feature{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  font-size: 1.3em;
+}
+
+
+/*Selvlavet plus-ikon*/
+  .plus-icon {
+      display: inline-block; /* eller inline-block */
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+
+/*Positionen af plus-ikon*/
+    .plus-icon {
+  display: flex;          /* aktiverer flexbox */
+  justify-content: right; /* centrerer indhold vandret */
+  align-items: center;    /* centrerer vertikalt (valgfrit) */
+  gap: 10px;              /* afstand mellem billede og tekst */
+  min-height: 1vh;       /* så det kan centreres lodret */
+}
+
+    .plus-icon::before,
+    .plus-icon::after {
+      content: '';
+      position: absolute;
+      background-color: var(--farve_moonlightwhite); /* Farven på plusset */
+    }
+
+ /* Den horisontale streg */
+    .plus-icon::before {
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+/* Den vertikale streg */
+    .plus-icon::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+
+/*mellemrum ved linjer i højden og bredde*/
+ .plus-icon {
+          margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
+        }
+ .plus-icon {
+          margin-left: 300px; /* Tilføjer 10 pixels mellemrum */
+        }
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3. Sektion */
+#sektionGave{
+  background-color: var(--farve_mørkebrun);
+  color: var(--farve_moonlightwhite);
+}
+/*Afstand mellem billede og tekst*/
+.container-b img {
+  flex: 0 0 45%;  /* billedet tager 35% af bredden */
+}
+
+/*position af billede og afstand mellem tekst og billede.*/
+.container-b {
+  display: flex;          /* aktiverer flexbox */
+  justify-content:flex-start; /*billedet starter i starten af siden */
+  align-items: center;
+  gap: 200px;            /* afstand mellem billede og tekst */
+  
+}
+#gave{
+  margin-left: -5px;
+
+}
+
+
+/*Størrelse på farvepalette*/
+.container-b img {
+  width: 100px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Sektion 4 Luminate yourself */
+
+#LuminateYourselfSektion{
+  background-color: var(--farve_mørkebrun);
+}
+.SHARE{
+display: flex ;
+flex-direction: column;
+justify-content: center;
+align-items:flex-start;
+margin-left: 50px;
+
+  color: var(--farve_orange);
+  background-color: var(--farve_mørkebrun);
+}
+
+.Luminatesektion{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: karrusel-animation 20s infinite alternate;
+  background-color: var(--farve_mørkebrun);
+}
+.karrusel{
+  width: 100%;
+  height: 450px;
+  background-color: var(--farve_mørkebrun);
+
+  .slides{
+    width: 300%;
+    height: 450px;
+    display: flex;
+  }
+
+  img{
+    width: calc(50% / 7);
+    height: 400px;
+    margin: 10px;
+    object-fit: contain;
+  }
+}
+
+@keyframes karrusel-animation {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-60%);
+  }
+}
+
+
+/*Footer*/
+
+.footer{
+  margin-top: 50px;
+  width: 100%;
+  padding: 100px 5%;
+  background: var(--farve_beige);
+  color: var(--farve_mørkebrun);
+  margin-bottom: 10px;
+}
+
+
+
+.footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
+        gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
+        a{
+          margin-left: 0px;
+        }
+    }
+
+.col-3{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_mørkebrun);
+  margin-bottom: 15px;
+}
+
+.col-2 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_mørkebrun);
+  margin-bottom: 15px;
+}
+
+.col-3 a{
+  display:block;
+  text-decoration: none;
+  color:var(--farve_mørkebrun);
+  margin-bottom: 15px;
+}
+
+.col-4 a{
+  display:block;
+  height: 600px;
+  text-decoration: none;
+  color:var(--farve_mørkebrun);
+  margin-bottom: 15px;
+}
+
+
+.copyright{
+  display: flex;
+  justify-content: baseline;
+  align-items: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
