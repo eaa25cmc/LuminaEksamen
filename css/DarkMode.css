@@ -11,23 +11,21 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--farve_mørkebrun);
 }
-
 
 /* Design system */
 
 /* Farver */
-:root{
---farve_mørkebrun: #282119; 
---farve_mørkeorange: #a54d27; 
---farve_beige: #e5d8bd; 
---farve_moonlightwhite: #fffdf2; 
+:root {
+  --farve_mørkebrun: #282119;
+  --farve_mørkeorange: #a54d27;
+  --farve_beige: #e5d8bd;
+  --farve_moonlightwhite: #fffdf2;
 
---farve_brun: #65371f; 
---farve_orange: #c97338; 
-
+  --farve_brun: #65371f;
+  --farve_orange: #c97338;
 }
 
 /* Design system */
@@ -39,105 +37,247 @@ body{
   font-weight: 500;
   font-style: normal;} */
 
-  /* font-family: "JetBrains Mono", monospace;
+/* font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
 
-h1{ 
-   font-family: "Jura", sans-serif;
-   font-size: 3.6em;
-   font-weight: 500;
-
+/*h1
+Herooverskrift*/
+h1 {
+  font-family: "jetBrains Mono", monospace;
+  font-size: 48px;
+  font-weight: 400; /*regular*/
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 
-h2{
+/*h2*/
+.h2-day,
+.h2-night {
   font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 700; 
-  font-style: normal; 
-
+  font-weight: 700; /*bold*/
+  font-style: 32px;
 }
-h3{
+
+/*Overskrifter i sektioner*/
+.h2-day {
+  color: var(--farve_mørkebrun);
+}
+
+.h2-night {
+  color: var(--farve_moonlightwhite);
+}
+
+/*h3*/
+.h3-hero-underoverskrift,
+.h3-influencer-day,
+.h3-influencer-night,
+.h3-hero-luminaLogo {
+  font-family: var(--font-sans);
+  font-weight: 600; /* semibold */
+  font-size: 32px;
+}
+
+/*underoverskrift (hero)*/
+.h3-hero-underoverskrift {
+  color: var(--farve_moonlightwhite);
+}
+
+/* Influencer – day */
+.h3-influencer-day {
+  color: var(--farve_mørkeorange);
+}
+
+/* Influencer – night */
+.h3-influencer-night {
+  color: var(--farve_orange);
+}
+
+/*lumina audio logo hero*/
+.h3-hero-luminaLogo {
+  color: var(--farve_moonlightwhite);
+}
+
+/* Hove til logo */
+.h3-hero-luminaLogo:hover {
+  color: var(--farve_beige);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+
+/*h4*/
+.h4-ctaDropdown--day:hover,
+.h4-ctaDropdown--day:hover,
+.h4-ctaDropdown--night,
+.h4-ctaDropdown--night:hover,
+.h4-footer-overskrift--night,
+.h4-footer-title--day,
+.h4-influencer--day,
+.h4-influencer--night {
+  font-family: var(--font-sans);
+  font-weight: 700; /*bold*/
+  font-size: 16px;
+}
+
+/* Farvevarianter */
+.h4-ctaDropdown--day {
+  color: var(--farve_moonlightwhite);
+}
+.h4-ctaDropdown--day:hover {
+  color: var(--farve_beige);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.h4-ctaDropdown--night {
+  color: var(--farve_mørkebrun);
+}
+.h4-ctaDropdown--night:hover {
+  color: var(--farve_brun);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.h4-influencer--day {
+  color: var(--farve_mørkeorange);
+}
+.h4-influencer--night {
+  color: var(--farve_orange);
+}
+.h4-footer-title--day {
+  color: var(--farve_moonlightwhite);
+}
+.h4-footer-overskrift--night {
+  color: var(--farve_mørkebrun);
+}
+
+/*h5*/
+.h5-multi--day:hover,
+.h5-multi--day:hover,
+.h5-multi--night,
+.h5-multi--night:hover,
+.h5-multi2--night,
+.h5-multi2--day,
+.h5-influencer--day,
+.h5-influencer--night {
+  font-family: var(--font-sans);
+  font-weight: 600; /*semibold*/
+  font-size: 16px;
+}
+
+/* Farvevarianter */
+.h5-multi--day {
+  color: var(--farve_moonlightwhite);
+}
+.h5-multi--day:hover {
+  color: var(--farve_beige);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.h5-multi--night {
+  color: var(--farve_mørkebrun);
+}
+.h5-multi--night:hover {
+  color: var(--farve_brun);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.h5-influencer--day {
+  color: var(--farve_mørkeorange);
+}
+.h5-influencer--night {
+  color: var(--farve_orange);
+}
+.h5-multi2--night {
+  color: var(--farve_moonlightwhite);
+}
+.h5-multi2--day {
+  color: var(--farve_mørkebrun);
+}
+
+/*h6*/
+.h6-underoverskrifterFeatures--day:hover,
+.h6-underoverskrifterFeatures--day:hover,
+.h6-underoverskrifterFeatures--night,
+.h6-underoverskrifterFeatures--night:hover {
+  font-family: var(--font-sans);
+  font-weight: 700; /*bold*/
+  font-size: 24px;
+}
+
+/* Farvevarianter */
+.h6-underoverskrifterFeatures--night {
+  color: var(--farve_moonlightwhite);
+}
+.h6-underoverskrifterFeatures--night:hover {
+  color: var(--farve_beige);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.h6-underoverskrifterFeatures--day {
+  color: var(--farve_mørkebrun);
+}
+.h6-underoverskrifterFeatures--day:hover {
+  color: var(--farve_brun);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+
+/*p*/
+.p-footer--day:hover,
+.p-footer--day:hover,
+.p-footer--night,
+.p-footer--night:hover,
+.p-brødtekst--night,
+.p-brød--day,
+.p-influencerBrødtekst--day,
+.p-influencerBrødtekst--night {
   font-family: "Jura", sans-serif;
-   font-size: 1.8em;
-   font-weight: 300;
-   
+  font-weight: 400; /* REGULAR */
+  font-size: 16px;
 }
 
-h4{
-   font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+/* Farvevarianter */
+.p-footer--night {
+  color: var(--farve_moonlightwhite);
 }
-
-h5{
-   font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+.p-footer--night:hover {
+  color: var(--farve_beige);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
-p{
-     font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+.p-footer--day {
+  color: var(--farve_mørkebrun);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.p-footer--day:hover {
+  color: var(--farve_brun);
+  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
+}
+.p-influencerBrødtekst--day {
+  color: var(--farve_mørkeorange);
+}
+.p-influencerBrødtekst--night {
+  color: var(--farve_orange);
+}
+.p-brødtekst--night {
+  color: var(--farve_moonlightwhite);
+}
+.p-brødtekst--day {
+  color: var(--farve_mørkebrun);
+}
 
 /* free tote bag  */
-#FreeTote{
+#FreeTote {
   height: 40px;
   align-content: center;
   background-color: var(--farve_mørkebrun);
 }
 
-a{
+a {
   color: var(--farve_moonlightwhite);
-   margin-left: 40px;
+  margin-left: 40px;
   font-family: "Jura", sans-serif;
 }
 
-
-
 /* topNav */
-#topNav a{
+#topNav a {
   text-decoration: none;
   font-size: 1.6em;
 }
 
-title{
+title {
   color: var(--farve_moonlightwhite);
 }
-
-
-
-
-
-
 
 /* Hero start */
 
@@ -146,7 +286,7 @@ header {
   background-color: var(--farve_moonlightwhite);
 
   /* Herobilledet i baggrunden*/
-  background-image: url('../images/herodark.png');
+  background-image: url("../images/herodark.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -155,33 +295,37 @@ header {
 
 /*læg teksten i midten vertikalt og horisontalt*/
 title {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-#topNav{
+#topNav {
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 32px;
   height: 200px;
-  background-color: linear-gradient(to top, transparent, #282119)
+  background-color: linear-gradient(to top, transparent, #282119);
 }
 
-.HeroTekst{
+#TopLogo {
+  margin-left: 136px;
+}
+
+.HeroTekst {
   height: 250px;
   width: 450px;
   display: flex;
   flex-direction: column;
   gap: 2px;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-left: 120px;
   color: var(--farve_moonlightwhite);
 }
 
-.heroundertekst{
+.heroundertekst {
   margin-left: 5px;
   margin-top: 10px;
 }
@@ -196,13 +340,15 @@ display: flex;
   display: inline-block;
   font-size: 1.4em;
   margin: 30px 0px;
-  font-family: "Jura", sans-serif; ;
-  box-shadow:0 0 8px #65371f;
+  font-family: "Jura", sans-serif;
+  box-shadow: 0 0 8px #65371f;
   margin-left: -2px;
 }
 
 /* runde kanter på knap */
-.button1 {border-radius: 50px;}
+.button1 {
+  border-radius: 50px;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -221,15 +367,15 @@ display: flex;
 
 /* The slider */
 .slider {
-  position:absolute;
+  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: var(--farve_mørkebrun);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -240,8 +386,8 @@ display: flex;
   left: 4px;
   bottom: 4px;
   background-color: var(--farve_moonlightwhite);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -250,7 +396,6 @@ input:checked + .slider {
 
 input:focus + .slider {
   box-shadow: 0 0 5px var(--farve_mørkeorange);
-  
 }
 
 input:checked + .slider:before {
@@ -283,8 +428,7 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%);
 }
 
-
-#pil{
+#pil {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,84 +437,51 @@ input:checked + .slider:before {
 
 /* Hero slut */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 1. Sektion*/
-#sektionProdukt{
+#sektionProdukt {
   width: 100%;
   height: 700px;
   background-color: var(--farve_mørkebrun);
   color: var(--farve_moonlightwhite);
-  
 }
 
-.billede1{
+.billede1 {
   display: block;
-  box-shadow: 0 6px 20px #a54d27(0,0,0,0.2);
+  box-shadow: 0 6px 20px #a54d27(0, 0, 0, 0.2);
 }
 /*placering af billede*/
 .container-a img {
-  flex: 0 0 30%;  /* billedet tager 25% af bredden */
+  flex: 0 0 30%; /* billedet tager 25% af bredden */
   width: 300;
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-
 }
-
-
 
 .container-a {
-  display: flex;          /* aktiverer flexbox */
+  display: flex; /* aktiverer flexbox */
   justify-content: center; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 200px;              /* afstand mellem billede og tekst */
-  min-height: 100vh;       /* så det kan centreres lodret */
+  align-items: center; /* centrerer vertikalt (valgfrit) */
+  gap: 200px; /* afstand mellem billede og tekst */
+  min-height: 100vh; /* så det kan centreres lodret */
 }
-
 
 /*størrelse på stjerner og farvepalette*/
 .container-a img {
-  width: 100px;           /* giv billedet en fast bredde */
-  height: auto;           /* bevar proportioner */
+  width: 100px; /* giv billedet en fast bredde */
+  height: auto; /* bevar proportioner */
   margin-left: -8px;
 }
-.farvevalg{
+.farvevalg {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /*afrunding af hjørner på højtaler*/
-.container-a img {  border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
-  box-shadow: 0 0px 20px #e5d8bd(0,0,0,0.2);
+.container-a img {
+  border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
+  box-shadow: 0 0px 20px #e5d8bd(0, 0, 0, 0.2);
 }
-
-
 
 /*CTA knap i sektion 1 og 3*/
 .button-button2 {
@@ -383,98 +494,62 @@ input:checked + .slider:before {
   display: inline-block;
   font-size: 1.4em;
   margin: 30px 0px;
-  font-family: "Jura", sans-serif; ;
+  font-family: "Jura", sans-serif;
 }
 
 /*Knap bliver rund*/
-.button-button2 {border-radius: 50px;}
-
+.button-button2 {
+  border-radius: 50px;
+}
 
 /*Mellemrum mellem knap og pris*/
- .button-button2 {
-          margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
-        }
- .tekst {
-          margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
-          font-family: "Jura", sans-serif;
-          font-size: 1.2em;
-        }
-
+.button-button2 {
+  margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
+}
+.tekst {
+  margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
+  font-family: "Jura", sans-serif;
+  font-size: 1.2em;
+}
 
 /*Vandrette linjer i både sektion 1, 2 og 3*/
 .vandret-linje {
-        border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en sort linje */
-        margin: 10px 0; /* Tilføj lidt plads over og under */
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en sort linje */
+  margin: 10px 0; /* Tilføj lidt plads over og under */
+}
 
 /* 2. Sektion */
-#sektionFeatures{
+#sektionFeatures {
   width: 100%;
   height: 700px;
   background-color: var(--farve_mørkebrun);
-  color: var(--farve_moonlightwhite)
+  color: var(--farve_moonlightwhite);
 }
 
 .flex-container {
-  display: flex;          /* aktiverer flexbox */
+  display: flex; /* aktiverer flexbox */
   justify-content: space-between; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 0px;              /* afstand mellem billede og tekst */
-  min-height: 100vh;       /* så det kan centreres lodret */
+  align-items: center; /* centrerer vertikalt (valgfrit) */
+  gap: 0px; /* afstand mellem billede og tekst */
+  min-height: 100vh; /* så det kan centreres lodret */
   margin-left: 150px;
   margin-right: 150px;
 }
-video{
+video {
   margin-left: -150px;
 }
-.video-content{
+.video-content {
   width: 400px;
   max-width: 500px;
   height: 590px;
   display: block;
-  border-radius: 90px;    /* ændr efter behov */
-  overflow: hidden;       /* forsikrer at indholdet bliver klippet */
-  box-shadow: 0 0px 5px #e5d8bd(0,0,0,0.2);
-  object-fit:none;      /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
+  border-radius: 90px; /* ændr efter behov */
+  overflow: hidden; /* forsikrer at indholdet bliver klippet */
+  box-shadow: 0 0px 5px #e5d8bd(0, 0, 0, 0.2);
+  object-fit: none; /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
 }
 
-
-.feature{ 
+.feature {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -482,165 +557,100 @@ video{
   font-size: 1.3em;
 }
 
-
 /*Selvlavet plus-ikon*/
-  .plus-icon {
-      display: inline-block; /* eller inline-block */
-      width: 20px;
-      height: 20px;
-      position: relative;
-    }
-
-/*Positionen af plus-ikon*/
-    .plus-icon {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: right; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 10px;              /* afstand mellem billede og tekst */
-  min-height: 1vh;       /* så det kan centreres lodret */
+.plus-icon {
+  display: inline-block; /* eller inline-block */
+  width: 20px;
+  height: 20px;
+  position: relative;
 }
 
-    .plus-icon::before,
-    .plus-icon::after {
-      content: '';
-      position: absolute;
-      background-color: var(--farve_moonlightwhite); /* Farven på plusset */
-    }
+/*Positionen af plus-ikon*/
+.plus-icon {
+  display: flex; /* aktiverer flexbox */
+  justify-content: right; /* centrerer indhold vandret */
+  align-items: center; /* centrerer vertikalt (valgfrit) */
+  gap: 10px; /* afstand mellem billede og tekst */
+  min-height: 1vh; /* så det kan centreres lodret */
+}
 
- /* Den horisontale streg */
-    .plus-icon::before {
-      width: 100%;
-      height: 2px;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
+.plus-icon::before,
+.plus-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--farve_moonlightwhite); /* Farven på plusset */
+}
+
+/* Den horisontale streg */
+.plus-icon::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
 
 /* Den vertikale streg */
-    .plus-icon::after {
-      width: 2px;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-
+.plus-icon::after {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*mellemrum ved linjer i højden og bredde*/
- .plus-icon {
-          margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
-        }
- .plus-icon {
-          margin-left: 300px; /* Tilføjer 10 pixels mellemrum */
-        }
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.plus-icon {
+  margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
+}
+.plus-icon {
+  margin-left: 300px; /* Tilføjer 10 pixels mellemrum */
+}
 
 /* 3. Sektion */
-#sektionGave{
+#sektionGave {
   background-color: var(--farve_mørkebrun);
   color: var(--farve_moonlightwhite);
 }
 /*Afstand mellem billede og tekst*/
 .container-b img {
-  flex: 0 0 45%;  /* billedet tager 35% af bredden */
+  flex: 0 0 45%; /* billedet tager 35% af bredden */
 }
 
 /*position af billede og afstand mellem tekst og billede.*/
 .container-b {
-  display: flex;          /* aktiverer flexbox */
-  justify-content:flex-start; /*billedet starter i starten af siden */
+  display: flex; /* aktiverer flexbox */
+  justify-content: flex-start; /*billedet starter i starten af siden */
   align-items: center;
-  gap: 200px;            /* afstand mellem billede og tekst */
-  
+  gap: 200px; /* afstand mellem billede og tekst */
 }
-#gave{
+#gave {
   margin-left: -5px;
-
 }
-
 
 /*Størrelse på farvepalette*/
 .container-b img {
-  width: 100px;           /* giv billedet en fast bredde */
-  height: auto;           /* bevar proportioner */
-  
+  width: 100px; /* giv billedet en fast bredde */
+  height: auto; /* bevar proportioner */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Sektion 4 Luminate yourself */
 
-#LuminateYourselfSektion{
+#LuminateYourselfSektion {
   background-color: var(--farve_mørkebrun);
 }
-.SHARE{
-display: flex ;
-flex-direction: column;
-justify-content: center;
-align-items:flex-start;
-margin-left: 50px;
+.SHARE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
 
   color: var(--farve_orange);
   background-color: var(--farve_mørkebrun);
 }
 
-.Luminatesektion{
+.Luminatesektion {
   height: 50%;
   display: flex;
   justify-content: center;
@@ -648,18 +658,18 @@ margin-left: 50px;
   animation: karrusel-animation 20s infinite alternate;
   background-color: var(--farve_mørkebrun);
 }
-.karrusel{
+.karrusel {
   width: 100%;
   height: 450px;
   background-color: var(--farve_mørkebrun);
 
-  .slides{
+  .slides {
     width: 300%;
     height: 450px;
     display: flex;
   }
 
-  img{
+  img {
     width: calc(50% / 7);
     height: 400px;
     margin: 10px;
@@ -668,18 +678,17 @@ margin-left: 50px;
 }
 
 @keyframes karrusel-animation {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(-60%);
   }
 }
 
-
 /*Footer*/
 
-.footer{
+.footer {
   margin-top: 50px;
   width: 100%;
   padding: 100px 5%;
@@ -688,84 +697,60 @@ margin-left: 50px;
   margin-bottom: 10px;
 }
 
-
-
 .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
-        gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
-        a{
-          margin-left: 0px;
-        }
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
+  gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
+  a {
+    margin-left: 0px;
+  }
+}
 
-.col-3{
+.col-3 {
   flex-grow: 2;
 }
 
-.footer div h3{
+.footer div h3 {
   font-weight: 300;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-.col-1 a{
-  display:block;
+.col-1 a {
+  display: block;
   text-decoration: none;
-  color:var(--farve_mørkebrun);
+  color: var(--farve_mørkebrun);
   margin-bottom: 15px;
 }
 
-.col-2 a{
-  display:block;
+.col-2 a {
+  display: block;
   text-decoration: none;
-  color:var(--farve_mørkebrun);
+  color: var(--farve_mørkebrun);
   margin-bottom: 15px;
 }
 
-.col-3 a{
-  display:block;
+.col-3 a {
+  display: block;
   text-decoration: none;
-  color:var(--farve_mørkebrun);
+  color: var(--farve_mørkebrun);
   margin-bottom: 15px;
 }
 
-.col-4 a{
-  display:block;
+.col-4 a {
+  display: block;
   height: 600px;
   text-decoration: none;
-  color:var(--farve_mørkebrun);
+  color: var(--farve_mørkebrun);
   margin-bottom: 15px;
 }
 
-
-.copyright{
+.copyright {
   display: flex;
   justify-content: baseline;
   align-items: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Define variables in the :root */
- 
 
 /* Use your variables on elements along these lines */
 /*
