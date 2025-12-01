@@ -338,24 +338,35 @@ title {
   margin-top: 10px;
 }
 
-.button1 {
+.button1,
+.button-button2 {
   background-color: var(--farve_mørkebrun);
   border: none;
   color: var(--farve_moonlightwhite);
-  padding: 10px 30px;
+  padding: 16px 24px;
   text-align: center;
-  text-decoration: none;
+  font-family: "jura", sans-serif;
+  font-weight: 700; /*bold*/
+  font-size: 16px;
   display: inline-block;
-  font-size: 1.4em;
-  margin: 30px 0px;
-  font-family: "Jura", sans-serif;
-  box-shadow: 0 0 8px #65371f;
-  margin-left: -2px;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: var(--farve_brun);
+  color: var(--farve_beige);
+  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
+}
+
+.button-button2:hover {
+  background-color: var(--farve_brun);
+  color: var(--farve_beige);
+  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
 }
 
 /* runde kanter på knap */
-.button1 {
-  border-radius: 50px;
+.button1,
+.button-button2 {
+  border-radius: 40px;
 }
 
 /* The switch - the box around the slider */
@@ -488,25 +499,6 @@ input:checked + .slider:before {
 .container-a img {
   border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
   box-shadow: 0 0px 20px #e5d8bd(0, 0, 0, 0.2);
-}
-
-/*CTA knap i sektion 1 og 3*/
-.button-button2 {
-  background-color: var(--farve_mørkebrun);
-  border: none;
-  color: var(--farve_moonlightwhite);
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.4em;
-  margin: 30px 0px;
-  font-family: "Jura", sans-serif;
-}
-
-/*Knap bliver rund*/
-.button-button2 {
-  border-radius: 50px;
 }
 
 /*Mellemrum mellem knap og pris*/
