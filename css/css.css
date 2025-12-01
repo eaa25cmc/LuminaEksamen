@@ -17,6 +17,12 @@ body {
   background-color: var(--farve_moonlightwhite);
 }
 
+/* Standard afstand mellem sektionerne */
+#sektionFeatures,
+#LuminateYourselfSektion {
+  margin-top: 400px;
+}
+
 /* Design system */
 
 /* Farver */
