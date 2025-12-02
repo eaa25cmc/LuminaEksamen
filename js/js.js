@@ -1,3 +1,4 @@
+/*produktsektion hvor js bruther fetch og json giver response*/
 document.addEventListener("DOMContentLoaded", () => {
   const farvePrikker = document.getElementById("farvePrikker");
   const produktBillede = document.getElementById("produktBillede");
@@ -53,3 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Fejl ved indlæsning af farver:", error));
 });
+
+/*produksektion slut */
