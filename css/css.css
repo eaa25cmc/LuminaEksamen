@@ -337,6 +337,8 @@ header {
   cursor: pointer;
   border-radius: 40px; /*kanterne bliver af*/
 }
+
+/* Knap hover effekter */
 .button1:hover {
   background-color: var(--farve_brun);
   color: var(--farve_beige);
@@ -349,76 +351,74 @@ header {
   box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
 }
 
-/* The switch - the box around the slider */
+/*day/night slider*/
 .switch {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 34px;
 }
 
-/* Hide default HTML checkbox */
+/* Skjul standard HTML checkbox */
 .switch input {
   opacity: 0;
-  width: 0;
-  height: 0;
 }
 
-/* The slider */
+/* Slideren */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* afstand mellem tekst */
+  padding: 8px 16px;
   background-color: var(--farve_mørkebrun);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  cursor: pointer;
+  transition: 0.4s ease-out;
 }
 
+/* Teksten inde i slideren */
+.slider .h5-multi--day,
+.slider .h5-multi--night {
+  margin: 0; /* ingen ekstra margin omkring teksten */
+}
+
+/* Cirklen inde i slider */
 .slider:before {
-  position: absolute;
+  position: relative;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 24px;
+  width: 24px;
   background-color: var(--farve_moonlightwhite);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: 0.4s ease-out;
 }
 
+/* Når slideren er tjekket */
 input:checked + .slider {
   background-color: var(--farve_mørkeorange);
 }
 
+/* Når slideren er i fokus */
 input:focus + .slider {
   box-shadow: 0 0 5px var(--farve_mørkeorange);
 }
 
+/* Flyt cirklen når slideren er tjekket */
 input:checked + .slider:before {
-  -webkit-transform: translateX(46px);
-  -ms-transform: translateX(46px);
-  transform: translateX(46px);
+  transform: translateX(24px);
 }
 
-/* Rounded sliders */
+/* Runde sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 40px;
 }
 
+/* Runde cirkler inde i slider */
 .slider.round:before {
   border-radius: 50%;
 }
 
-/* Slider position på siden */
+/* Placering af slider under hero tekst */
 #slider {
   height: 300px;
-  position: relative;
-}
-
-#slider {
   margin: 0;
   position: absolute;
   top: 100%;

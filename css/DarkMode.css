@@ -353,72 +353,73 @@ header {
 .switch {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 34px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
-  width: 0;
-  height: 0;
 }
 
-/* The slider */
+/* Slideren */
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* afstand mellem tekst */
+  padding: 8px 16px;
   background-color: var(--farve_mørkebrun);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: 0.4s ease-out;
 }
 
+/* Teksten inde i slideren */
+.slider .h5-multi--day,
+.slider .h5-multi--night {
+  margin: 0; /* ingen ekstra margin omkring teksten */
+  order: 0; /* sørger for at teksten kommer først */
+}
+
+/* Cirklen inde i slider */
 .slider:before {
-  position: absolute;
+  position: relative;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 24px;
+  width: 24px;
   background-color: var(--farve_mørkebrun);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: 0.1s ease-out;
+  order: 1; /* sørger for at cirklen kommer efter teksten */
+  margin-left: 8px; /* afstand mellem cirklen og teksten */
 }
 
+/* Når slideren er tjekket */
 input:checked + .slider {
   background-color: var(--farve_moonlightwhite);
 }
 
+/* Når slideren er i fokus */
 input:focus + .slider {
   box-shadow: 0 0 5px var(--farve_mørkebrun);
 }
 
+/* Flyt cirklen når slideren er tjekket */
 input:checked + .slider:before {
-  -webkit-transform: translateX(46px);
-  -ms-transform: translateX(46px);
-  transform: translateX(46px);
+  transform: none;
 }
 
-/* Rounded sliders */
+/* Runde sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 40px;
 }
 
+/* Runde cirkler inde i slider */
 .slider.round:before {
   border-radius: 50%;
 }
 
-/* Slider position på siden */
+/* Placering af slider under hero tekst */
 #slider {
   height: 300px;
-  position: relative;
-}
-
-#slider {
   margin: 0;
   position: absolute;
   top: 100%;
