@@ -375,6 +375,10 @@ header {
   transition: 0.4s ease-out;
 }
 
+.slider:hover {
+  background-color: var(--farve_brun);
+}
+
 /* Teksten inde i slideren */
 .slider .h5-multi--day,
 .slider .h5-multi--night {
@@ -393,12 +397,12 @@ header {
 
 /* Når slideren er tjekket */
 input:checked + .slider {
-  background-color: var(--farve_mørkeorange);
+  background-color: var(--farve_moonlightwhite);
 }
 
 /* Når slideren er i fokus */
 input:focus + .slider {
-  box-shadow: 0 0 5px var(--farve_mørkeorange);
+  box-shadow: 0 0 5px var(--farve_mørkebrun);
 }
 
 /* Flyt cirklen når slideren er tjekket */
