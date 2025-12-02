@@ -335,6 +335,7 @@ header {
   font-size: 16px;
   display: inline-block;
   cursor: pointer;
+  border-radius: 40px; /*kanterne bliver afrundet*/
 }
 .button1:hover {
   background-color: var(--farve_brun);
@@ -346,12 +347,6 @@ header {
   background-color: var(--farve_brun);
   color: var(--farve_beige);
   box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
-}
-
-/* runde kanter på knap */
-.button1,
-.button-button2 {
-  border-radius: 40px;
 }
 
 /* The switch - the box around the slider */
