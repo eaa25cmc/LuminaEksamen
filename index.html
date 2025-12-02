@@ -92,9 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
   
-<article id="pil"> 
-  <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-</article>
 
 </Section>
 
@@ -112,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
  <div class="container-a">
 
     <img class="billede1"
+        id="produktBillede"
         src="images/billeder fra figma/højtaler/mooonlightWhite.png"
         alt="Lumina one om dagen" >
     
@@ -142,30 +140,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
         <section class="farvevalg">
-       <p class="brødtekst--day">Moonlight white </p>
+       <p class="brødtekst--day" id="farveNavn">Moonlight white </p>
         
        <aside>
-        <div class="farveprikker">
-        <img
-       src="images/billeder fra figma/Farveprikker/MoonlightWhiteLillePrik.svg"
-       alt="MoonlightWhiteStorPrik"
-       class="MoonlightWhiteStorPrik">
-      <img
-       src="images/billeder fra figma/Farveprikker/DustyRoseLillePrik.svg"
-       alt="DustyRoseLillePrik"
-       class="DustyRoseLillePrik">
-        <img
-       src="images/billeder fra figma/Farveprikker/LavenderMistLillePrik.svg"
-       alt="LavenderMistLillePrik"
-       class="LavenderMistLillePrik">
-        <img
-       src="images/billeder fra figma/Farveprikker/SageGreenLillePrik.svg"
-       alt="SageGreenLillePrik"
-       class="SageGreenLillePrik">
-       <img
-       src="images/billeder fra figma/Farveprikker/DarkBrownLillePrik.svg"
-       alt="DarkBrownLillePrik"
-       class="DarkBrownLillePrik">
+        <div class="farveprikker" id="farvePrikker">
+          <!-- Farveprikker indsættes her via JS -->
        </div>
       </aside>
        </section>

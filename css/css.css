@@ -431,13 +431,6 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%);
 }
 
-#pil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--farve_moonlightwhite);
-}
-
 /* Hero slut */
 
 /* 1. Sektion*/
@@ -448,31 +441,23 @@ input:checked + .slider:before {
   color: var(--farve_mørkebrun);
 }
 
-.farveprikker img {
-  display: block; /* ← fixer baseline alignment-problemet */
-}
-
-.farveprikker {
+#farvePrikker {
   display: flex;
-  align-items: center;
   gap: 8px;
+  align-items: center;
 }
 
-/* Stor prik */
-.MoonlightWhiteStorPrik {
-  width: 24px;
-  height: 24px;
-  margin: 0;
-}
-
-/* Små prikker */
-.SageGreenLillePrik,
-.LavenderMistLillePrik,
-.DustyRoseLillePrik,
-.DarkBrownLillePrik {
+.farvePrik {
   width: 16px;
   height: 16px;
-  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  display: block;
+}
+
+.farvePrik.valgt {
+  width: 24px;
+  height: 24px;
 }
 
 .billede1 {
