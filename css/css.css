@@ -335,7 +335,7 @@ header {
   font-size: 16px;
   display: inline-block;
   cursor: pointer;
-  border-radius: 40px; /*kanterne bliver afrundet*/
+  border-radius: 40px; /*kanterne bliver af*/
 }
 .button1:hover {
   background-color: var(--farve_brun);

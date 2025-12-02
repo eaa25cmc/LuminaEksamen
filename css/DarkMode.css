@@ -384,17 +384,17 @@ header {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--farve_moonlightwhite);
+  background-color: var(--farve_mørkebrun);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: var(--farve_mørkeorange);
+  background-color: var(--farve_moonlightwhite);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 5px var(--farve_mørkeorange);
+  box-shadow: 0 0 5px var(--farve_mørkebrun);
 }
 
 input:checked + .slider:before {
