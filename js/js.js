@@ -56,3 +56,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /*produksektion slut */
+
+/*Features sektion*/
+document.addEventListener("DOMContentLoaded", () => {
+  const features = document.querySelectorAll(".feature");
+
+  features.forEach((feature) => {
+    const header = feature.querySelector(
+      ".featureSound, .featureDesign, .featurePower, .featureSocial"
+    );
+
+    const plusIcon = feature.querySelector(".PlusUhover");
+
+    header.addEventListener("click", () => {
+      feature.classList.toggle("open");
+
+      if (feature.classList.contains("open")) {
+        plusIcon.src = "images/billeder fra figma/Ikoner/minusU.Hover.svg";
+      } else {
+        plusIcon.src = "images/billeder fra figma/Ikoner/PlusU.Hover.svg";
+      }
+    });
+  });
+});
+
+/*Feature sektion slutter*/
