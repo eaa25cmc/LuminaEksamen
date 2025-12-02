@@ -120,7 +120,7 @@ h1 {
 
 /*h4*/
 .h4-ctaDropdown--day:hover,
-.h4-ctaDropdown--day:hover,
+.h4-ctaDropdown--day,
 .h4-ctaDropdown--night,
 .h4-ctaDropdown--night:hover,
 .h4-footer-overskrift--night,
@@ -162,7 +162,7 @@ h1 {
 
 /*h5*/
 .h5-multi--day:hover,
-.h5-multi--day:hover,
+.h5-multi--day,
 .h5-multi--night,
 .h5-multi--night:hover,
 .h5-multi2--night,
@@ -238,10 +238,10 @@ h1 {
 
 /*p*/
 .p-footerRating--day:hover,
-.p-footerRating--day:hover,
+.p-footerRating--day,
 .p-footerRating--night,
 .p-footerRating--night:hover,
-.p-brødtekstRating--night,
+.p-brødtekst--night,
 .p-brød--day,
 .p-influencerBrødtekst--day,
 .p-influencerBrødtekst--night {
