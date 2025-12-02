@@ -443,15 +443,41 @@ input:checked + .slider:before {
   color: var(--farve_mørkebrun);
 }
 
+.farveprikker img {
+  display: block; /* ← fixer baseline alignment-problemet */
+}
+
+.farveprikker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Stor prik */
+.MoonlightWhiteStorPrik {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+/* Små prikker */
+.SageGreenLillePrik,
+.LavenderMistLillePrik,
+.DustyRoseLillePrik,
+.DarkBrownLillePrik {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
 .billede1 {
+  flex: 0 0 30%; /* billedet tager 25% af bredden */
+  width: 300px;
+  max-width: 100%;
+  width: 100px; /* giv billedet en fast bredde */
+  height: auto;
   display: block;
   box-shadow: 0 6px 20px #a54d27(0, 0, 0, 0.2);
-}
-/*placering af billede*/
-.container-a img {
-  flex: 0 0 35%; /* billedet tager 35% af bredden */
-  max-width: 100%;
-  height: auto;
 }
 
 .container-a {
@@ -462,15 +488,13 @@ input:checked + .slider:before {
   min-height: 100vh; /* så det kan centreres lodret */
 }
 
-/*størrelse på stjerner og farvepalette*/
-.container-a img {
-  width: 100px; /* giv billedet en fast bredde */
-  height: auto; /* bevar proportioner */
-}
 .farvevalg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 48px;
+  padding: 0;
+  margin: 0;
 }
 
 /*afrunding af hjørner på højtaler*/
