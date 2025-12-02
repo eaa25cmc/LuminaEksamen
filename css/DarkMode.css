@@ -17,6 +17,12 @@ body {
   background-color: var(--farve_mørkebrun);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* forhindrer scroll ud af skærmview */
+}
+
 /* Standard afstand mellem sektionerne */
 #sektionFeatures,
 #LuminateYourselfSektion {
@@ -475,7 +481,6 @@ input:checked + .slider:before {
   flex: 0 0 30%; /* billedet tager 25% af bredden */
   width: 300px;
   max-width: 100%;
-  width: 100px; /* giv billedet en fast bredde */
   height: auto;
   display: block;
   box-shadow: 0 6px 20px #a54d27(0, 0, 0, 0.2);
@@ -628,10 +633,10 @@ video {
 }
 
 .Luminatesektion {
-  height: 50%;
+  height: 50%; /* fylder halvdelen af siden i højden */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* I midten horisontalt */
+  align-items: center; /* i midten vertikalt */
   background-color: var(--farve_mørkebrun);
 }
 .karrusel {

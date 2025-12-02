@@ -17,6 +17,12 @@ body {
   background-color: var(--farve_moonlightwhite);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* forhindrer scroll ud af skærmview */
+}
+
 /* Standard afstand mellem sektionerne */
 #sektionFeatures,
 #LuminateYourselfSektion {
@@ -474,7 +480,6 @@ input:checked + .slider:before {
   flex: 0 0 30%; /* billedet tager 25% af bredden */
   width: 300px;
   max-width: 100%;
-  width: 100px; /* giv billedet en fast bredde */
   height: auto;
   display: block;
   box-shadow: 0 6px 20px #a54d27(0, 0, 0, 0.2);
