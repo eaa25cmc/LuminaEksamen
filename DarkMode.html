@@ -1,347 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Jura:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Lumina one</title>
-  <link rel="stylesheet" href="css/darkmode.css">
+    <title>Lumina one</title>
+    <link rel="stylesheet" href="css/darkmode.css" />
+  </head>
 
-</head>
-<body>
+  <body>
+    <header>
+      <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+      ></script>
 
+      <br />
 
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-<header>
-  <br>
-<nav id="topNav">
-    <div class="Menu">
-      <img src="images/billeder-fra-figma/ikoner/burgermenu-u-hover.svg" alt="MenuIkon">
-      </div>  
-
-     <!-- Logo i midten -->
-  <div id="TopLogo">
-    <img src="images/billeder-fra-figma/ikoner/logo-u-hover.svg" alt="Logo">
-  </div>
-
-  <!-- symboler: person, søg, kurv --> 
-  <div class="ikoner">
-  
-      <img src="images/billeder-fra-figma/ikoner/søg-hvid-u-hover.svg" alt="søgIkon">
-   <img src="images/billeder-fra-figma/ikoner/globus-u-hover.svg" alt="globusIkon">
-  <img src="images/billeder-fra-figma/ikoner/profil-u-hover.svg" alt="profilIkon">
-  <img src="images/billeder-fra-figma/ikoner/kurv-u-hover.svg" alt="kurvIkon">
-    
-  </div>
-
-</nav>
-
-
-
-<section class="HeroTekst">
-  <h1>Turn music into moments</h1>
-  <div class="heroundertekst">
-  <h3 class="h3-hero-underoverskrift">Live it together.<br>
-    Play it louder.
-  </h3>
-  </div>
-
-
- <!--CTA knap-->
-  <button class="button button1">BUY NOW</button>
-
-
-</section>
-
-<!-- Rounded switch-->
- <Section id="slider">
-
-    <label class="switch">
-     <input type="checkbox" id="toggleSwitch">
-      <span class="slider round">
-         <h5 class="h5-multi--night">Day mode</h5>
-
-      </span>
-      
-  </label>
-
-</Section>
-</header>
-
-
-
-
-
-  <main>
-
-
-<!--1. sektion med LUMINA one-->
-  <section id="sektionProdukt">
-
-<!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
- <div class="container-a">
-
-    <img class="billede1"
-        id="produktBillede"
-        src="images/billeder-fra-figma/speaker/darkbrown.png"
-        alt="Lumina one by night" >
-    
-
-
-  <!--tekstgrupperingen-->
-    <div class="Luminadagen">
-<h5 class="h5-multi2--night">Lumina one</h5>
-<h2 class="h2-night">Portable Bluetooth Speaker</h2>
-
-      <br>
-       <p class="p-brødtekst--night">Big sound, sleek design, and up to 18 hours of</p>
-       <p class="p-brødtekst--night">playtime. With customizable ambient lighting,</p> 
-       <p class="p-brødtekst--night">Bluetooth 5.3 connectivity, and IPX5 water resistance,</p>
-       <p class="p-brødtekst--night">LUMINA one is your perfect companion for beach days,</p>
-       <p class="p-brødtekst--night"> park picnics, or cozy nights.</p>
-       <br>
-       
-       <!--stjerner til trustpilot-->
-       <img
-       src="images/billeder-fra-figma/5stjerner.svg"
-       alt="stjerner"
-       class="stjerner">
-       <p class="p-footerRating--night">Over 3K reviews on Trustpilot</p>
-
-       <!--Ny gruppe med vandrette linjer-->
-        <div class="vandret-linje"></div>
-
-        <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
-        <section class="farvevalg">
-       <p class="brødtekst--night" id="farveNavn">Moonlight white </p>
-        
-       <aside>
-       <div id="farvePrikker">
-        <!-- Farveprikker indsættes her via JS -->
-       </div>
-      </aside>
-       </section>
-       
-      <!--Ny vandret linje-->
-       <div class="vandret-linje"></div>
-
-
-      <!--CTA knap  og pris til køb-->
-       <button class="button-button2">ADD TO CART </button>
-       <span class="tekst">1.995 kr.</span>   
-  </div>
-</div>
-</section>
-
-
-
-
-
-<section id="sektionFeatures">
-  <!--2. sektion med features-->
-
-  <!--Der laves to grupperinger, som er flex og video. -->
-<div class="flex-container">
-  <!--Her er en undergruppering-->
-  <div class="text-content">
-      <h5 class="h5-multi2--night">Lumina one</h5>
-      <br>
-   <h2 class="h2-night">Features</h2>
-    <br>
-
-
-    <section class="features"> 
-        <div class="vandret-linje"></div>
-          <div class="feature">
-            <div class="featureSound">
-            <img
-       src="images/billeder-fra-figma/ikoner/n-sound-u-hover.svg"
-       alt="NightSoundUHover"
-       class="NightSoundUHover"><h6 class="h6-underoverskrifterFeatures--night">Sound</h6>
-       <img
-       src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
-       alt="NPlusUHover"
-       class="NPlusUhover"></div></div>
-          <div class="vandret-linje"></div>
-
-
-        <div class="feature">
-          <div class="featureDesign">
+      <nav id="topNav">
+        <div class="Menu">
           <img
-       src="images/billeder-fra-figma/ikoner/n-design-u-hover.svg"
-       alt="NightDesignUHover"
-       class="NightDesignUHover"><h6 class="h6-underoverskrifterFeatures--night">Design</h6>
-       <img
-       src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
-       alt="NPlusUHover"
-       class="NPlusUhover"></div></div>
-       <div class="vandret-linje"></div>
+            src="images/billeder-fra-figma/ikoner/burgermenu-u-hover.svg"
+            alt="MenuIkon"
+          />
+        </div>
 
-
-        <div class="feature">
-          <div class="featurePower">
-            <img
-       src="images/billeder-fra-figma/ikoner/n-power-u-hover.svg"
-       alt="NightPowerUHover"
-       class="NightPowerUHover"><h6 class="h6-underoverskrifterFeatures--night">Power</h6>
-       <img
-       src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
-       alt="NPlusUHover"
-       class="NPlusUhover"></div></div>
-       <div class="vandret-linje"></div>
-
-
-        <div class="feature">
-             <div class="featureSocial">
+        <!-- Logo i midten -->
+        <div id="TopLogo">
           <img
-       src="images/billeder-fra-figma/ikoner/n-social-u-hover.svg"
-       alt="NightSocialUHover"
-       class="NightSocialUHover"><h6 class="h6-underoverskrifterFeatures--night">Social connection</h6>
-       <img
-       src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
-       alt="NPlusUHover"
-       class="NPlusUhover"></div></div>
-       <div class="vandret-linje"></div>
-         </section>
-    
-  </div>
-<!--Anden gruppering ses-->
-  <div class="video-content">
-    <video controls poster="images/billeder-fra-figma/speaker/darkbrown.png" autoplay loop> 
-      <source src="images/rec-20250918133532.mp4" type="video/mp4">
+            src="images/billeder-fra-figma/ikoner/logo-u-hover.svg"
+            alt="Logo"
+          />
+        </div>
 
-    </video>  
+        <!-- symboler: person, søg, kurv -->
+        <div class="ikoner">
+          <img
+            src="images/billeder-fra-figma/ikoner/søg-hvid-u-hover.svg"
+            alt="søgIkon"
+          />
+          <img
+            src="images/billeder-fra-figma/ikoner/globus-u-hover.svg"
+            alt="globusIkon"
+          />
+          <img
+            src="images/billeder-fra-figma/ikoner/profil-u-hover.svg"
+            alt="profilIkon"
+          />
+          <img
+            src="images/billeder-fra-figma/ikoner/kurv-u-hover.svg"
+            alt="kurvIkon"
+          />
+        </div>
+      </nav>
 
-      <!--<video controls poster="poster.jpg" autoplay loop>
-      <source src="images/luminavideo-online-video-cutter.mp4" type="video/mp4">
-    </video> -->
-</div>
-</section>
+      <section class="HeroTekst">
+        <h1>Turn music into moments</h1>
+        <div class="heroundertekst">
+          <h3 class="h3-hero-underoverskrift">
+            Live it together.<br />
+            Play it louder.
+          </h3>
+        </div>
 
+        <!--CTA knap-->
+        <button class="button button1">BUY NOW</button>
+      </section>
 
+      <!-- Rounded switch-->
+      <section id="slider">
+        <label class="switch">
+          <input type="checkbox" id="toggleSwitch" />
+          <span class="slider round">
+            <span class="h5-multi--night">Day mode</span>
+          </span>
+        </label>
+      </section>
+    </header>
 
+    <main>
+      <!--1. sektion med LUMINA one-->
+      <section id="sektionProdukt">
+        <!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
+        <div class="container-a">
+          <img
+            class="billede1"
+            id="produktBillede"
+            src="images/billeder-fra-figma/speaker/darkbrown.png"
+            alt="Lumina one by night"
+          />
 
-<!-- Luminate yourself -->
-<section id="LuminateYourselfSektion">
-  <section>
-  <br><br><br>
-  <section class="SHARE">
-  <h5 class="h5-influencer--night">SHARE WITH US</h5>
-  <h3 class="h3-influencer-night">Luminate yourself</h3>
-  <p class="p-influencerBrødtekst--night">Shared moments make life meaningful. With LUMINA ONE, music becomes the heartbeat of every </p>
-  <p class="p-influencerBrødtekst--night">gathering — bringing people closer and turning simple get-togethers into unforgettable memories.</p>
-  <br>
-  <h4 class="h4-influencer--night">Tag us at @Lumina on Instagram to share your moment!</h4>
-  </section>
-  </section>
+          <!--tekstgrupperingen-->
+          <div class="Luminadagen">
+            <h5 class="h5-multi2--night">Lumina one</h5>
+            <h2 class="h2-night">Portable Bluetooth Speaker</h2>
 
-  <section class="Luminatesektion"> 
+            <br />
+            <p class="p-brødtekst--night">
+              Big sound, sleek design, and up to 18 hours of
+            </p>
+            <p class="p-brødtekst--night">
+              playtime. With customizable ambient lighting,
+            </p>
+            <p class="p-brødtekst--night">
+              Bluetooth 5.3 connectivity, and IPX5 water resistance,
+            </p>
+            <p class="p-brødtekst--night">
+              LUMINA one is your perfect companion for beach days,
+            </p>
+            <p class="p-brødtekst--night">park picnics, or cozy nights.</p>
+            <br />
 
-    <div class="karrusel">
+            <!--stjerner til trustpilot-->
+            <img
+              src="images/billeder-fra-figma/5stjerner.svg"
+              alt="stjerner"
+              class="stjerner"
+            />
+            <p class="p-footerRating--night">Over 3K reviews on Trustpilot</p>
 
-      <div class="slides">
-        <img src="images/billeder-fra-figma/influencer/n-influencer1.png" alt="img1">
-         <img src="images/billeder-fra-figma/influencer/n-influencer2.png" alt="img2">
-        <img src="images/billeder-fra-figma/influencer/n-influencer3.png" alt="img3">
-        <img src="images/billeder-fra-figma/influencer/n-influencer4.png" alt="img4">
-        <img src="images/billeder-fra-figma/influencer/n-influencer5.png" alt="img5">
-        <img src="images/billeder-fra-figma/influencer/n-influencer6.png" alt="img6">
-        <img src="images/billeder-fra-figma/influencer/n-influencer7.png" alt="img7">
+            <!--Ny gruppe med vandrette linjer-->
+            <div class="vandret-linje"></div>
 
-      </div>
+            <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
+            <section class="farvevalg">
+              <p class="brødtekst--night" id="farveNavn">Moonlight white</p>
 
-    </div>
+              <aside>
+                <div id="farvePrikker">
+                  <!-- Farveprikker indsættes her via JS -->
+                </div>
+              </aside>
+            </section>
 
-  </section>
+            <!--Ny vandret linje-->
+            <div class="vandret-linje"></div>
 
-
-
-</section>
-
-
-
-<!--Footer-->
-  
-  <div class="footer">
-    <div class="col-1">
-      <h6 class="h6-footerOverskrift--night">CUSTOMER CARE</h6>
-      <p class="p-footerRating--day">Shipping and delivery</p>
-      <P class="p-footerRating--day">Returns</p>
-      <P class="p-footerRating--day">Produkt support</p>
-     <P class="p-footerRating--day">Contact us</p>
-      <P class="p-footerRating--day">FAQ</p>
-      <P class="p-footerRating--day">Find store</p>
-
-      <br> <br> <br> <br>
-
-      <h6 class="h6-footerOverskrift--night">SOCIAL LINKS</h6>
-    <P class="p-footerRating--day">Facebook</p>
-      <P class="p-footerRating--day">Instagram</p>
-      <P class="p-footerRating--day">LinkedIn</p>
-    <P class="p-footerRating--day">X</p>
-     <P class="p-footerRating--day">Youtube</p>
-  <P class="p-footerRating--day">TikTok</p>
-     <P class="p-footerRating--day">Pinterest</p>
-    </div>
-
- 
-
-    <div class="col-2">
-      <h6 class="h6-footerOverskrift--night">OUR COMPANY</h6>
-     <P class="p-footerRating--day">Accessibility</p>
-      <P class="p-footerRating--day">Counterfeit</p>
-      <P class="p-footerRating--day">Change cookie settings</p>
-      <P class="p-footerRating--day">Cookie policy</p>
-      <P class="p-footerRating--day">Privacy policy</p>
-      <P class="p-footerRating--day">Policies and terms</p>
-
-      <br> <br> <br> <br>
-
-      <h6 class="h6-footerOverskrift--night">DOWNLOAD OUR APP</h6>
-      <P class="p-footerRating--day">Discover LUMINA</p>
-    </div>
-
-
-
-    <div class="col-3">
-      <h6 class="h6-footerOverskrift--night">OUR POLICIES</h6>
-      <p class="p-footerRating--day">Sustainability</p>
-      <p class="p-footerRating--day">Investors</p>
-       <p class="p-footerRating--day">Careers</p>
-       <p class="p-footerRating--day">Press</p>
-       <p class="p-footerRating--day">Custom integration</p>
-      <p class="p-footerRating--day">Become a sales partner</p>
-     <p class="p-footerRating--day">Contact us</p>
-    </div>
-
-
-      <div class="col-4">
-        <h6 class="h6-footerOverskrift--night">INTERNATIONAL</h6>
-      <p class="p-footerRating--day">English</p>
-          <div class="copyright">
-            <p class="p-footerRating--day"> © LUMINA AUDIO 2025</p>
+            <!--CTA knap  og pris til køb-->
+            <button class="button-button2">ADD TO CART</button>
+            <span class="tekst">1.995 kr.</span>
           </div>
-       </div>
+        </div>
+      </section>
 
-     
-  </div>
+      <!--2. sektion med features-->
+      <section id="sektionFeatures">
+        <!--Der laves to grupperinger, som er flex og video. -->
+        <div class="flex-container">
+          <!--Her er en undergruppering-->
+          <div class="text-content">
+            <h5 class="h5-multi2--night">Lumina one</h5>
+            <br />
+            <h2 class="h2-night">Features</h2>
+            <br />
 
+            <section class="features">
+              <div class="vandret-linje"></div>
+              <div class="feature">
+                <div class="featureSound">
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-sound-u-hover.svg"
+                    alt="NightSoundUHover"
+                    class="NightSoundUHover"
+                  />
+                  <h6 class="h6-underoverskrifterFeatures--night">Sound</h6>
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
+                    alt="NPlusUHover"
+                    class="NPlusUhover"
+                  />
+                </div>
+              </div>
 
+              <div class="vandret-linje"></div>
 
+              <div class="feature">
+                <div class="featureDesign">
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-design-u-hover.svg"
+                    alt="NightDesignUHover"
+                    class="NightDesignUHover"
+                  />
+                  <h6 class="h6-underoverskrifterFeatures--night">Design</h6>
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
+                    alt="NPlusUHover"
+                    class="NPlusUhover"
+                  />
+                </div>
+              </div>
 
+              <div class="vandret-linje"></div>
 
+              <div class="feature">
+                <div class="featurePower">
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-power-u-hover.svg"
+                    alt="NightPowerUHover"
+                    class="NightPowerUHover"
+                  />
+                  <h6 class="h6-underoverskrifterFeatures--night">Power</h6>
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
+                    alt="NPlusUHover"
+                    class="NPlusUhover"
+                  />
+                </div>
+              </div>
 
+              <div class="vandret-linje"></div>
 
+              <div class="feature">
+                <div class="featureSocial">
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-social-u-hover.svg"
+                    alt="NightSocialUHover"
+                    class="NightSocialUHover"
+                  />
+                  <h6 class="h6-underoverskrifterFeatures--night">
+                    Social connection
+                  </h6>
+                  <img
+                    src="images/billeder-fra-figma/ikoner/n-plus-u-hover.svg"
+                    alt="NPlusUHover"
+                    class="NPlusUhover"
+                  />
+                </div>
+              </div>
 
+              <div class="vandret-linje"></div>
+            </section>
+          </div>
 
-  </main>
-  <script src="js/js.js"></script>
+          <!--Anden gruppering ses-->
+          <div class="video-content">
+            <video
+              controls
+              poster="images/billeder-fra-figma/speaker/darkbrown.png"
+              autoplay
+              loop
+            >
+              <source src="images/rec-20250918133532.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
 
+      <!-- Luminate yourself -->
+      <section id="LuminateYourselfSektion">
+        <section>
+          <br /><br /><br />
+          <section class="SHARE">
+            <h5 class="h5-influencer--night">SHARE WITH US</h5>
+            <h3 class="h3-influencer-night">Luminate yourself</h3>
+            <p class="p-influencerBrødtekst--night">
+              Shared moments make life meaningful. With LUMINA ONE, music
+              becomes the heartbeat of every
+            </p>
+            <p class="p-influencerBrødtekst--night">
+              gathering — bringing people closer and turning simple
+              get-togethers into unforgettable memories.
+            </p>
+            <br />
+            <h4 class="h4-influencer--night">
+              Tag us at @Lumina on Instagram to share your moment!
+            </h4>
+          </section>
+        </section>
+
+        <section class="Luminatesektion">
+          <div class="karrusel">
+            <div class="slides">
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer1.png"
+                alt="img1"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer2.png"
+                alt="img2"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer3.png"
+                alt="img3"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer4.png"
+                alt="img4"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer5.png"
+                alt="img5"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer6.png"
+                alt="img6"
+              />
+              <img
+                src="images/billeder-fra-figma/influencer/n-influencer7.png"
+                alt="img7"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--Footer-->
+
+      <div class="footer">
+        <div class="col-1">
+          <h6 class="h6-footerOverskrift--night">CUSTOMER CARE</h6>
+          <p class="p-footerRating--day">Shipping and delivery</p>
+          <p class="p-footerRating--day">Returns</p>
+          <p class="p-footerRating--day">Produkt support</p>
+          <p class="p-footerRating--day">Contact us</p>
+          <p class="p-footerRating--day">FAQ</p>
+          <p class="p-footerRating--day">Find store</p>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h6 class="h6-footerOverskrift--night">SOCIAL LINKS</h6>
+          <p class="p-footerRating--day">Facebook</p>
+          <p class="p-footerRating--day">Instagram</p>
+          <p class="p-footerRating--day">LinkedIn</p>
+          <p class="p-footerRating--day">X</p>
+          <p class="p-footerRating--day">Youtube</p>
+          <p class="p-footerRating--day">TikTok</p>
+          <p class="p-footerRating--day">Pinterest</p>
+        </div>
+
+        <div class="col-2">
+          <h6 class="h6-footerOverskrift--night">OUR COMPANY</h6>
+          <p class="p-footerRating--day">Accessibility</p>
+          <p class="p-footerRating--day">Counterfeit</p>
+          <p class="p-footerRating--day">Change cookie settings</p>
+          <p class="p-footerRating--day">Cookie policy</p>
+          <p class="p-footerRating--day">Privacy policy</p>
+          <p class="p-footerRating--day">Policies and terms</p>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h6 class="h6-footerOverskrift--night">DOWNLOAD OUR APP</h6>
+          <p class="p-footerRating--day">Discover LUMINA</p>
+        </div>
+
+        <div class="col-3">
+          <h6 class="h6-footerOverskrift--night">OUR POLICIES</h6>
+          <p class="p-footerRating--day">Sustainability</p>
+          <p class="p-footerRating--day">Investors</p>
+          <p class="p-footerRating--day">Careers</p>
+          <p class="p-footerRating--day">Press</p>
+          <p class="p-footerRating--day">Custom integration</p>
+          <p class="p-footerRating--day">Become a sales partner</p>
+          <p class="p-footerRating--day">Contact us</p>
+        </div>
+
+        <div class="col-4">
+          <h6 class="h6-footerOverskrift--night">INTERNATIONAL</h6>
+          <p class="p-footerRating--day">English</p>
+          <div class="copyright">
+            <p class="p-footerRating--day">© LUMINA AUDIO 2025</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/js.js"></script>
+  </body>
 </html>
-
-</body>
