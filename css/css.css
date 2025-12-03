@@ -256,7 +256,7 @@ h1 {
 }
 .p-footerRating--night:hover {
   color: var(--farve_beige);
-  text-shadow: var(--farve_mørkebrun) 1px px 2px;
+  text-shadow: var(--farve_mørkebrun) 1px 1px 2px;
 }
 .p-footerRating--day {
   color: var(--farve_mørkebrun);
@@ -317,7 +317,7 @@ header {
 }
 
 .heroundertekst {
-  height: 92;
+  height: 92px;
   width: 523px;
   margin-top: 8px;
 }
@@ -466,7 +466,6 @@ input:checked + .slider:before {
   max-width: 100%;
   height: auto;
   display: block;
-  box-shadow: 0 6px 20px #a54d27(0, 0, 0, 0.2);
 }
 
 .container-a {
@@ -489,7 +488,6 @@ input:checked + .slider:before {
 /*afrunding af hjørner på højtaler*/
 .container-a img {
   border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
-  box-shadow: 0 0px 20px #e5d8bd(0, 0, 0, 0.2);
 }
 
 /*Mellemrum mellem knap og pris*/
@@ -530,8 +528,7 @@ input:checked + .slider:before {
   height: 620px;
   display: block;
   border-radius: 90px; /* ændr efter behov */
-  overflow: hidden; /* forsikrer at indholdet bliver klippet */
-  box-shadow: 0 0px 5px #e5d8bd(0, 0, 0, 0.2);
+  overflow: hidden; /* gør at indholdet bliver klippet */
   object-fit: cover;
 }
 
@@ -657,9 +654,6 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
   gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
-  a {
-    margin-left: 0px;
-  }
 }
 
 .col-3 {
@@ -701,8 +695,10 @@ input:checked + .slider:before {
 
 .copyright {
   display: flex;
-  justify-content: baseline;
-  align-items: right;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 600px;
+  margin-right: 104px;
 }
 
 /* Define variables in the :root */
