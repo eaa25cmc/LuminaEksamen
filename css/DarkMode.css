@@ -651,7 +651,6 @@ input:checked + .slider:before {
   padding: 100px 5%;
   background: var(--farve_beige);
   color: var(--farve_mørkebrun);
-  margin-bottom: 10px;
 }
 
 .footer {
