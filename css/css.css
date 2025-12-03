@@ -138,14 +138,12 @@ h1 {
 }
 .h4-ctaDropdown--day:hover {
   color: var(--farve_beige);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h4-ctaDropdown--night {
   color: var(--farve_mørkebrun);
 }
 .h4-ctaDropdown--night:hover {
   color: var(--farve_brun);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h4-influencer--day {
   color: var(--farve_mørkeorange);
@@ -180,14 +178,12 @@ h1 {
 }
 .h5-multi--day:hover {
   color: var(--farve_beige);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h5-multi--night {
   color: var(--farve_mørkebrun);
 }
 .h5-multi--night:hover {
   color: var(--farve_brun);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h5-influencer--day {
   color: var(--farve_mørkeorange);
@@ -220,14 +216,12 @@ h1 {
 }
 .h6-underoverskrifterFeatures--night:hover {
   color: var(--farve_beige);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h6-underoverskrifterFeatures--day {
   color: var(--farve_mørkebrun);
 }
 .h6-underoverskrifterFeatures--day:hover {
   color: var(--farve_brun);
-  text-shadow: var(--farve_mørkebrun) 2px 2px 4px;
 }
 .h6-footerOverskrift--day {
   color: var(--farve_moonlightwhite);
@@ -253,17 +247,19 @@ h1 {
 /* Farvevarianter */
 .p-footerRating--night {
   color: var(--farve_moonlightwhite);
+  cursor: pointer;
 }
 .p-footerRating--night:hover {
   color: var(--farve_beige);
-  text-shadow: var(--farve_mørkebrun) 1px 1px 2px;
+  cursor: pointer;
 }
 .p-footerRating--day {
   color: var(--farve_mørkebrun);
+  cursor: pointer;
 }
 .p-footerRating--day:hover {
   color: var(--farve_brun);
-  text-shadow: var(--farve_brun) 1px 1px 2px;
+  cursor: pointer;
 }
 .p-influencerBrødtekst--day {
   color: var(--farve_mørkeorange);
