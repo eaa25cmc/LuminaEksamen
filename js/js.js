@@ -1,3 +1,29 @@
+/*Switch knap day/night mode */
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("toggleSwitch");
+
+  // Robust bestemmelse af filnavn (lowercase så case ikke driller)
+  const filename = window.location.pathname.split("/").pop().toLowerCase();
+
+  // Sæt initial tilstand INDEN vi sætter event listener
+  if (filename === "darkmode.html") {
+    toggle.checked = true;
+  } else {
+    toggle.checked = false;
+  }
+
+  // Når brugeren ændrer togglen → skift side
+  toggle.addEventListener("change", function () {
+    if (this.checked) {
+      window.location.href = "DarkMode.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+});
+
+/*Switch knap slutter */
+
 /*produktsektion hvor js bruther fetch og json giver response*/
 document.addEventListener("DOMContentLoaded", () => {
   const farvePrikker = document.getElementById("farvePrikker");

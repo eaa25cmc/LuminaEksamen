@@ -512,7 +512,7 @@ input:checked + .slider:before {
   margin: 0px;
 }
 
-/* 3. Sektion */
+/* 2. Sektion */
 #sektionFeatures {
   width: 100%;
   height: 700px;
@@ -528,6 +528,7 @@ input:checked + .slider:before {
   min-height: 100vh; /* så det kan centreres lodret */
   margin-left: 88px;
   margin-right: 88px;
+  cursor: pointer;
 }
 video {
   margin-left: -150px;
@@ -543,16 +544,34 @@ video {
   object-fit: none; /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
 }
 
-/*sektion 2 */
-
 /*mellemrum mellem tekst og linjer*/
+/* Gør hver feature til en blok, så teksten kommer under */
 .feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px;
+  display: block;
 }
 
+/* skjult tekst */
+.featureText {
+  display: none;
+  margin-top: 8px;
+  margin-bottom: 32px; /* afstand TIL næste linje */
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 40px; /* samme indryk som dine featureSound/design/power/social */
+  transition: 0.3s ease;
+  max-width: 486px;
+}
+
+/* når open-klassen er tilføjet */
+.feature.open .featureText {
+  display: block;
+  max-height: 200px; /* Tekst */
+}
+
+/* plus ikon roteres som minus */
+.feature.open .PlusUhover {
+  transition: transform 0.2s ease;
+}
 .featureSocial,
 .featureDesign,
 .featurePower,

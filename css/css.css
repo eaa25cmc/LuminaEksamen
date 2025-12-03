@@ -524,6 +524,7 @@ input:checked + .slider:before {
   min-height: 100vh; /* så det kan centreres lodret */
   margin-left: 88px;
   margin-right: 88px;
+  cursor: pointer;
 }
 
 .video-content {

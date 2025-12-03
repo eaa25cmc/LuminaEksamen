@@ -68,28 +68,6 @@
       
   </label>
 
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.getElementById('toggleSwitch');
-  const filename = window.location.pathname.split('/').pop().toLowerCase();
-
-  // Initial tilstand
-  if (filename === 'darkmode.html') {
-    toggle.checked = true;
-  } else {
-    toggle.checked = false;
-  }
-
-  toggle.addEventListener('change', function () {
-    if (this.checked) {
-      window.location.href = 'DarkMode.html';
-    } else {
-      window.location.href = 'index.html';
-    }
-  });
-});
-</script>
-
 </Section>
 </header>
 
