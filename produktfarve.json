@@ -2,69 +2,69 @@
   {
     "id": 1,
     "navn": "Chocolate brown",
-    "img": "images/billeder fra figma/højtaler/DarkBrown.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/NDarkBrownLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/darkbrown.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/n-darkbrown-lille-prik.svg"
   },
 
   {
     "id": 2,
     "navn": "Sage green",
-    "img": "images/billeder fra figma/højtaler/SageGreen.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/NSageGreenLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/sage-green.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/n-sage-green-lille-prik.svg"
   },
 
   {
     "id": 3,
     "navn": "Lavender mist",
-    "img": "images/billeder fra figma/højtaler/LavenderMist.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/NLavenderMistLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/lavender-mist.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/n-lavender-mist-lille-prik.svg"
   },
   {
     "id": 4,
     "navn": "Dusty rose",
-    "img": "images/billeder fra figma/højtaler/DustyRose.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/NDustyRoseLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/dusty-rose.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/n-dusty-rose-lille-prik.svg"
   },
 
   {
     "id": 5,
     "navn": "Moonlight white",
-    "img": "images/billeder fra figma/højtaler/MoonlightWhite.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/NMoonlightWhiteLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/moonlight-white.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/n-moonlight-white-lille-prik.svg"
   },
 
   {
     "id": 6,
     "navn": "Moonlight white",
-    "img": "images/billeder fra figma/højtaler/MoonlightWhite.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/MoonlightWhiteLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/moonlight-white.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/moonlight-white-lille-prik.svg"
   },
 
   {
     "id": 7,
     "navn": "Dusty rose",
-    "img": "images/billeder fra figma/højtaler/DustyRose.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/DustyRoseLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/dusty-Rose.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/dusty-rose-lille-prik.svg"
   },
 
   {
     "id": 8,
     "navn": "Lavender mist",
-    "img": "images/billeder fra figma/højtaler/LavenderMist.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/LavenderMistLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/lavender-mist.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/lavender-mist-lille-prik.svg"
   },
 
   {
     "id": 9,
     "navn": "Sage green",
-    "img": "images/billeder fra figma/højtaler/SageGreen.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/SageGreenLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/sage-green.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/sage-green-lille-prik.svg"
   },
 
   {
     "id": 10,
     "navn": "Chocolate brown",
-    "img": "images/billeder fra figma/højtaler/DarkBrown.png",
-    "farveprik": "images/billeder fra figma/Farveprikker/DarkBrownLillePrik.svg"
+    "img": "images/billeder-fra-figma/speaker/darkbrown.png",
+    "farveprik": "images/billeder-fra-figma/farveprikker/darkbrown-lille-prik.svg"
   }
 ]

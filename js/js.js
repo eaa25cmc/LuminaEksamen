@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Når brugeren ændrer togglen → skift side
   toggle.addEventListener("change", function () {
     if (this.checked) {
-      window.location.href = "DarkMode.html";
+      window.location.href = "darkmode.html";
     } else {
       window.location.href = "index.html";
     }
@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Tjek om vi er på DarkMode.html
   const path = window.location.pathname.toLowerCase();
-  const isDarkMode = path.endsWith("darkmode.html");
+  const isdarkmode = path.endsWith("darkmode.html");
 
   fetch("produktfarve.json")
     .then((response) => response.json())
     .then((farver) => {
       let valgteFarver;
 
-      if (isDarkMode) {
+      if (isdarkmode) {
         /*Darkmode farver med id 1-5*/
         // Filtrer farver til dark mode (kun ID 1–5)
         valgteFarver = farver.filter((f) => f.id >= 1 && f.id <= 5);
@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
       feature.classList.toggle("open");
 
       if (feature.classList.contains("open")) {
-        plusIcon.src = "images/billeder fra figma/Ikoner/minusU.Hover.svg";
+        plusIcon.src = "images/billeder-fra-figma/ikoner/minus-u-hover.svg";
       } else {
-        plusIcon.src = "images/billeder fra figma/Ikoner/PlusU.Hover.svg";
+        plusIcon.src = "images/billeder-fra-figma/ikoner/plus-u-hover.svg";
       }
     });
   });
