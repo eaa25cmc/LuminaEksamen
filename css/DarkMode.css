@@ -286,7 +286,7 @@ header {
   background-color: var(--farve_mørkebrun);
 
   /* Herobilledet i baggrunden*/
-  background-image: url("../images/herodark.png");
+  background-image: url("../images/billeder-fra-figma/herodark.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -525,23 +525,17 @@ input:checked + .slider:before {
   justify-content: space-between; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
   gap: 0px; /* afstand mellem billede og tekst */
-  min-height: 100vh; /* så det kan centreres lodret */
   margin-left: 88px;
   margin-right: 88px;
   cursor: pointer;
 }
-video {
-  margin-left: -150px;
-}
+
 .video-content {
-  width: 400px;
-  max-width: 500px;
-  height: 590px;
-  display: block;
-  border-radius: 90px; /* ændr efter behov */
+  width: 500px;
+  height: 620px;
+  border-radius: 90px; /* runder hjørner */
   overflow: hidden; /* forsikrer at indholdet bliver klippet */
   box-shadow: 0 0px 5px #e5d8bd(0, 0, 0, 0.2);
-  object-fit: none; /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
 }
 
 /*mellemrum mellem tekst og linjer*/

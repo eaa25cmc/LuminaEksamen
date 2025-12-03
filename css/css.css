@@ -286,7 +286,7 @@ header {
   background-color: var(--farve_moonlightwhite);
 
   /* Herobilledet i baggrunden*/
-  background-image: url("../images/hero.png");
+  background-image: url("../images/billeder-fra-figma/hero.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -520,22 +520,19 @@ input:checked + .slider:before {
   display: flex; /* aktiverer flexbox */
   justify-content: space-between; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
-  gap: 0px; /* afstand mellem billede og tekst */
-  min-height: 100vh; /* så det kan centreres lodret */
+  gap: 80px; /* afstand mellem billede og tekst */
   margin-left: 88px;
   margin-right: 88px;
   cursor: pointer;
 }
-
 .video-content {
-  width: 480px;
-  max-width: 5000px;
-  height: 590px;
+  width: 500px;
+  height: 620px;
   display: block;
   border-radius: 90px; /* ændr efter behov */
   overflow: hidden; /* forsikrer at indholdet bliver klippet */
   box-shadow: 0 0px 5px #e5d8bd(0, 0, 0, 0.2);
-  object-fit: none; /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
+  object-fit: cover;
 }
 
 /*mellemrum mellem tekst og linjer*/
