@@ -123,8 +123,8 @@ h1 {
 .h4-ctaDropdown--day,
 .h4-ctaDropdown--night,
 .h4-ctaDropdown--night:hover,
-.h4-footer-overskrift--night,
-.h4-footer-title--day,
+.h4-pris--night,
+.h4-pris--day,
 .h4-influencer--day,
 .h4-influencer--night {
   font-family: "jura", sans-serif;
@@ -153,10 +153,10 @@ h1 {
 .h4-influencer--night {
   color: var(--farve_orange);
 }
-.h4-footer-title--day {
+.h4-pris--day {
   color: var(--farve_moonlightwhite);
 }
-.h4-footer-overskrift--night {
+.h4-pris--night {
   color: var(--farve_mørkebrun);
 }
 
@@ -498,9 +498,11 @@ input:checked + .slider:before {
   margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
 }
 .tekst {
-  margin-left: 200px; /* Tilføjer 10 pixels mellemrum */
-  font-family: "Jura", sans-serif;
-  font-size: 1.2em;
+  margin-left: 336px; /* Tilføjer mellemrum */
+  font-family: "jura", sans-serif;
+  font-weight: 700; /*bold*/
+  font-size: 16px;
+  color: var(--farve_moonlightwhite);
 }
 
 /*Vandrette linjer i både sektion 1, 2 og 3*/
@@ -522,7 +524,7 @@ input:checked + .slider:before {
   display: flex; /* aktiverer flexbox */
   justify-content: space-between; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
-  gap: 0px; /* afstand mellem billede og tekst */
+  gap: 80px; /* afstand mellem billede og tekst */
   margin-left: 88px;
   margin-right: 88px;
   cursor: pointer;
@@ -533,6 +535,7 @@ input:checked + .slider:before {
   height: 620px;
   border-radius: 90px; /* runder hjørner */
   overflow: hidden; /* gør at indholdet bliver klippet */
+  object-fit: cover;
 }
 
 /*mellemrum mellem tekst og linjer*/
