@@ -53,7 +53,7 @@ body {
 
 /* font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal; */
 
 /*h1
@@ -86,7 +86,8 @@ h1 {
 .h3-hero-underoverskrift,
 .h3-influencer-day,
 .h3-influencer-night,
-.h3-hero-luminaLogo {
+.h3-hero-luminaLogo,
+.h3-hero-luminaLogo:hover {
   font-family: "jura", sans-serif;
   font-weight: 600; /* semibold */
   font-size: 32px;
@@ -236,7 +237,7 @@ h1 {
 .p-footerRating--night,
 .p-footerRating--night:hover,
 .p-brødtekst--night,
-.p-brød--day,
+.p-brødtekst--day,
 .p-influencerBrødtekst--day,
 .p-influencerBrødtekst--night {
   font-family: "Jura", sans-serif;
@@ -277,31 +278,61 @@ h1 {
 /* Hero start */
 
 header {
-  position: relative;
-  height: 100vh;
-  background-color: var(--farve_mørkebrun);
-
-  /* Herobilledet i baggrunden*/
-  background-image: url("../images/billeder-fra-figma/herodark.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
 /*læg teksten i midten vertikalt og horisontalt*/
 
 #topNav {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 32px;
-  margin-top: 40px;
-  height: 136px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.menu {
+  justify-content: flex;
+  align-items: center;
 }
 
 #TopLogo {
-  margin-left: 136px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 32px;
+  margin-left: 560px;
+}
+
+#TopLogo img {
+  height: 97px;
+  width: 236px;
+}
+
+.ikoner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.HeroSektion {
+  position: relative;
+  height: 800px;
+
+  /* Herobilledet i baggrunden*/
+  background-image: url("../images/billeder-fra-figma/herodark.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 200px;
+  color: var(--farve_moonlightwhite);
 }
 
 .HeroTekst {
@@ -423,7 +454,7 @@ input:checked + .slider:before {
   height: 300px;
   margin: 0;
   position: absolute;
-  top: 100%;
+  top: 92%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -547,7 +578,7 @@ input:checked + .slider:before {
   margin-bottom: 32px; /* afstand TIL næste linje */
   max-height: 0;
   overflow: hidden;
-  padding-left: 40px; /* samme indryk som dine featureSound/design/power/social */
+  padding-left: 40px;
   transition: 0.3s ease;
   max-width: 486px;
 }

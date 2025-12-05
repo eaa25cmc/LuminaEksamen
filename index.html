@@ -16,15 +16,8 @@
 
   <body>
     <header>
-      <script
-        src="https://kit.fontawesome.com/a076d05399.js"
-        crossorigin="anonymous"
-      ></script>
-
-      <br />
-
       <nav id="topNav">
-        <div class="Menu">
+        <div class="menu">
           <img
             src="images/billeder-fra-figma/ikoner/burgermenu-u-hover.svg"
             alt="MenuIkon"
@@ -59,33 +52,36 @@
           />
         </div>
       </nav>
-
-      <section class="HeroTekst">
-        <h1>Turn music into moments</h1>
-
-        <div class="heroundertekst">
-          <h3 class="h3-hero-underoverskrift">
-            Live it together.<br />
-            Play it louder.
-          </h3>
-        </div>
-
-        <!--CTA knap-->
-        <button class="button button1">BUY NOW</button>
-      </section>
-
-      <!-- Rounded switch-->
-      <section id="slider">
-        <label class="switch">
-          <input type="checkbox" id="toggleSwitch" />
-          <span class="slider round">
-            <span class="h5-multi--day">Night mode</span>
-          </span>
-        </label>
-      </section>
     </header>
 
     <main>
+      <!--Herosektion-->
+      <section class="HeroSektion">
+        <div class="HeroTekst">
+          <h1>Turn music into moments</h1>
+
+          <div class="heroundertekst">
+            <h3 class="h3-hero-underoverskrift">
+              Live it together.<br />
+              Play it louder.
+            </h3>
+          </div>
+
+          <!--CTA knap-->
+          <button class="button button1">BUY NOW</button>
+        </div>
+
+        <!-- Rounded switch-->
+        <div id="slider">
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch" />
+            <span class="slider round">
+              <span class="h5-multi--day">Night mode</span>
+            </span>
+          </label>
+        </div>
+      </section>
+
       <!--1. sektion med LUMINA one-->
       <section id="sektionProdukt">
         <!--Vi har grupperet billedet i én gruppe og tekst i en anden gruppe-->
@@ -98,11 +94,10 @@
           />
 
           <!--tekstgrupperingen-->
-          <div class="Luminadagen">
+          <div class="luminadagen">
             <h5 class="h5-multi2--day">Lumina one</h5>
             <h2 class="h2-day">Portable Bluetooth Speaker</h2>
 
-            <br />
             <p class="p-brødtekst--day">
               Big sound, sleek design, and up to 18 hours of
             </p>
@@ -116,7 +111,6 @@
               LUMINA one is your perfect companion for beach days,
             </p>
             <p class="p-brødtekst--day">park picnics, or cozy nights.</p>
-            <br />
 
             <!--stjerner til trustpilot-->
             <img
@@ -130,15 +124,15 @@
             <div class="vandret-linje"></div>
 
             <!--Moonlight tekst og farve på samme linje som er i grupperingen image-->
-            <section class="farvevalg">
+            <div class="farvevalg">
               <p class="brødtekst--day" id="farveNavn">Moonlight white</p>
 
-              <aside>
+              <div>
                 <div class="farveprikker" id="farvePrikker">
                   <!-- Farveprikker indsættes her via JS -->
                 </div>
-              </aside>
-            </section>
+              </div>
+            </div>
 
             <!--Ny vandret linje-->
             <div class="vandret-linje"></div>
@@ -157,11 +151,10 @@
           <!--Her er en undergruppering-->
           <div class="text-content">
             <h5 class="h5-multi2--day">Lumina one</h5>
-            <br />
-            <h2 class="h2-day">Features</h2>
-            <br />
 
-            <section class="features">
+            <h2 class="h2-day">Features</h2>
+
+            <div class="features">
               <!--Sound feature-->
               <div class="vandret-linje"></div>
               <div class="feature">
@@ -276,7 +269,7 @@
               </div>
 
               <div class="vandret-linje"></div>
-            </section>
+            </div>
           </div>
 
           <!-- Anden gruppering ses-->
@@ -299,27 +292,24 @@
 
       <!-- Luminate yourself -->
       <section id="LuminateYourselfSektion">
-        <section>
-          <br /><br /><br />
-          <section class="SHARE">
-            <h5 class="h5-influencer--day">SHARE WITH US</h5>
-            <h3 class="h3-influencer-day">Luminate yourself</h3>
-            <p class="p-influencerBrødtekst--day">
-              Shared moments make life meaningful. With LUMINA ONE, music
-              becomes the heartbeat of every
-            </p>
-            <p class="p-influencerBrødtekst--day">
-              gathering — bringing people closer and turning simple
-              get-togethers into unforgettable memories.
-            </p>
-            <br />
-            <h4 class="h4-influencer--day">
-              Tag us at @Lumina on Instagram to share your moment!
-            </h4>
-          </section>
-        </section>
+        <div class="SHARE">
+          <h5 class="h5-influencer--day">SHARE WITH US</h5>
+          <h3 class="h3-influencer-day">Luminate yourself</h3>
+          <p class="p-influencerBrødtekst--day">
+            Shared moments make life meaningful. With LUMINA ONE, music becomes
+            the heartbeat of every
+          </p>
+          <p class="p-influencerBrødtekst--day">
+            gathering — bringing people closer and turning simple get-togethers
+            into unforgettable memories.
+          </p>
 
-        <section class="Luminatesektion">
+          <h4 class="h4-influencer--day">
+            Tag us at @Lumina on Instagram to share your moment!
+          </h4>
+        </div>
+
+        <div class="Luminatesektion">
           <div class="karrusel">
             <div class="slides">
               <img
@@ -352,74 +342,64 @@
               />
             </div>
           </div>
-        </section>
+        </div>
       </section>
+    </main>
 
-      <!--Footer-->
+    <!--Footer-->
 
-      <div class="footer">
-        <div class="col-1">
-          <h6 class="h6-footerOverskrift--day">CUSTOMER CARE</h6>
-          <p class="p-footerRating--night">Shipping and delivery</p>
-          <p class="p-footerRating--night">Returns</p>
-          <p class="p-footerRating--night">Produkt support</p>
-          <p class="p-footerRating--night">Contact us</p>
-          <p class="p-footerRating--night">FAQ</p>
-          <p class="p-footerRating--night">Find store</p>
+    <footer class="footer">
+      <div class="col-1">
+        <h6 class="h6-footerOverskrift--day">CUSTOMER CARE</h6>
+        <p class="p-footerRating--night">Shipping and delivery</p>
+        <p class="p-footerRating--night">Returns</p>
+        <p class="p-footerRating--night">Produkt support</p>
+        <p class="p-footerRating--night">Contact us</p>
+        <p class="p-footerRating--night">FAQ</p>
+        <p class="p-footerRating--night">Find store</p>
 
-          <br />
-          <br />
-          <br />
-          <br />
+        <h6 class="h6-footerOverskrift--day">SOCIAL LINKS</h6>
+        <p class="p-footerRating--night">Facebook</p>
+        <p class="p-footerRating--night">Instagram</p>
+        <p class="p-footerRating--night">LinkedIn</p>
+        <p class="p-footerRating--night">X</p>
+        <p class="p-footerRating--night">Youtube</p>
+        <p class="p-footerRating--night">TikTok</p>
+        <p class="p-footerRating--night">Pinterest</p>
+      </div>
 
-          <h6 class="h6-footerOverskrift--day">SOCIAL LINKS</h6>
-          <p class="p-footerRating--night">Facebook</p>
-          <p class="p-footerRating--night">Instagram</p>
-          <p class="p-footerRating--night">LinkedIn</p>
-          <p class="p-footerRating--night">X</p>
-          <p class="p-footerRating--night">Youtube</p>
-          <p class="p-footerRating--night">TikTok</p>
-          <p class="p-footerRating--night">Pinterest</p>
-        </div>
+      <div class="col-2">
+        <h6 class="h6-footerOverskrift--day">OUR COMPANY</h6>
+        <p class="p-footerRating--night">Accessibility</p>
+        <p class="p-footerRating--night">Counterfeit</p>
+        <p class="p-footerRating--night">Change cookie settings</p>
+        <p class="p-footerRating--night">Cookie policy</p>
+        <p class="p-footerRating--night">Privacy policy</p>
+        <p class="p-footerRating--night">Policies and terms</p>
 
-        <div class="col-2">
-          <h6 class="h6-footerOverskrift--day">OUR COMPANY</h6>
-          <p class="p-footerRating--night">Accessibility</p>
-          <p class="p-footerRating--night">Counterfeit</p>
-          <p class="p-footerRating--night">Change cookie settings</p>
-          <p class="p-footerRating--night">Cookie policy</p>
-          <p class="p-footerRating--night">Privacy policy</p>
-          <p class="p-footerRating--night">Policies and terms</p>
+        <h6 class="h6-footerOverskrift--day">DOWNLOAD OUR APP</h6>
+        <p class="p-footerRating--night">Discover LUMINA</p>
+      </div>
 
-          <br />
-          <br />
-          <br />
-          <br />
+      <div class="col-3">
+        <h6 class="h6-footerOverskrift--day">OUR POLICIES</h6>
+        <p class="p-footerRating--night">Sustainability</p>
+        <p class="p-footerRating--night">Investors</p>
+        <p class="p-footerRating--night">Careers</p>
+        <p class="p-footerRating--night">Press</p>
+        <p class="p-footerRating--night">Custom integration</p>
+        <p class="p-footerRating--night">Become a sales partner</p>
+        <p class="p-footerRating--night">Contact us</p>
+      </div>
 
-          <h6 class="h6-footerOverskrift--day">DOWNLOAD OUR APP</h6>
-          <p class="p-footerRating--night">Discover LUMINA</p>
-        </div>
-
-        <div class="col-3">
-          <h6 class="h6-footerOverskrift--day">OUR POLICIES</h6>
-          <p class="p-footerRating--night">Sustainability</p>
-          <p class="p-footerRating--night">Investors</p>
-          <p class="p-footerRating--night">Careers</p>
-          <p class="p-footerRating--night">Press</p>
-          <p class="p-footerRating--night">Custom integration</p>
-          <p class="p-footerRating--night">Become a sales partner</p>
-          <p class="p-footerRating--night">Contact us</p>
-        </div>
-
-        <div class="col-4">
-          <h6 class="h6-footerOverskrift--day">INTERNATIONAL</h6>
-          <p class="p-footerRating--night">English</p>
-          <div class="copyright">
-            <p class="p-footerRating--night">© LUMINA AUDIO 2025</p>
-          </div>
+      <div class="col-4">
+        <h6 class="h6-footerOverskrift--day">INTERNATIONAL</h6>
+        <p class="p-footerRating--night">English</p>
+        <div class="copyright">
+          <p class="p-footerRating--night">© LUMINA AUDIO 2025</p>
         </div>
       </div>
-    </main>
+    </footer>
 
     <script src="js/js.js"></script>
   </body>
