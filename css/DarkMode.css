@@ -93,11 +93,15 @@ h1 {
 /* Influencer – day */
 .h3-influencer-day {
   color: var(--farve_mørkeorange);
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 /* Influencer – night */
 .h3-influencer-night {
   color: var(--farve_orange);
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 /*lumina audio logo hero*/
@@ -140,9 +144,11 @@ h1 {
 }
 .h4-influencer--day {
   color: var(--farve_mørkeorange);
+  margin-top: 8px;
 }
 .h4-influencer--night {
   color: var(--farve_orange);
+  margin-top: 8px;
 }
 .h4-pris--day {
   color: var(--farve_moonlightwhite);
@@ -180,9 +186,11 @@ h1 {
 }
 .h5-influencer--day {
   color: var(--farve_mørkeorange);
+  margin-bottom: 8px;
 }
 .h5-influencer--night {
   color: var(--farve_orange);
+  margin-bottom: 8px;
 }
 .h5-multi2--night {
   color: var(--farve_moonlightwhite);
@@ -206,23 +214,23 @@ h1 {
 /* Farvevarianter */
 .h6-underoverskrifterFeatures--night {
   color: var(--farve_moonlightwhite);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--night:hover {
   color: var(--farve_beige);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--day {
   color: var(--farve_mørkebrun);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--day:hover {
   color: var(--farve_brun);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-footerOverskrift--day {
   color: var(--farve_moonlightwhite);
@@ -268,12 +276,17 @@ h1 {
 .p-footerRating--day:hover {
   color: var(--farve_brun);
   cursor: pointer;
+  margin-top: 24px;
 }
 .p-influencerBrødtekst--day {
   color: var(--farve_mørkeorange);
+  max-width: 688px;
+  margin-bottom: 8px;
 }
 .p-influencerBrødtekst--night {
   color: var(--farve_orange);
+  max-width: 688px;
+  margin-bottom: 8px;
 }
 .p-brødtekst--night {
   color: var(--farve_moonlightwhite);
@@ -348,7 +361,6 @@ header {
   width: 523px;
   margin-left: 160px;
   margin-top: 104px;
-  color: var(--farve_moonlightwhite);
 }
 
 .heroundertekst {
@@ -438,6 +450,12 @@ input:checked + .slider:before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.pil-ned {
+  position: absolute;
+  margin-left: 40px;
+  bottom: 128px;
+}
 /* 1. sektion hero slut */
 
 /* CTA i sektion 1 og 2*/
@@ -471,9 +489,8 @@ input:checked + .slider:before {
 /* 2. Sektion produkt*/
 #sektionProdukt {
   width: 100%;
-  height: 800px;
+  height: 704px;
   background-color: var(--farve_mørkebrun);
-  color: var(--farve_moonlightwhite);
 }
 
 .container-a {
@@ -481,7 +498,7 @@ input:checked + .slider:before {
   justify-content: center; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
   gap: 216px; /* afstand mellem billede og tekst */
-  margin-top: 80px;
+  margin-top: 40px;
 }
 /*placering af billede*/
 .billede1 {
@@ -597,7 +614,7 @@ input:checked + .slider:before {
 }
 
 /* plus ikon roteres som minus */
-.feature.open .PlusUhover {
+.feature.open .NPlusUhover {
   transition: transform 0.2s ease;
 }
 .featureSocial,
@@ -636,14 +653,24 @@ input:checked + .slider:before {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.night-node-billede {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
 /* 3. sektion slut */
 
 /* 4. sektion med influencer Luminate yourself */
 #LuminateYourselfSektion {
   width: 100%;
-  height: 744px;
+  max-height: 744px;
+  margin-top: 8px;
+  margin-bottom: 24px;
   background-color: var(--farve_mørkebrun);
 }
+
 .SHARE {
   display: flex;
   flex-direction: column;
@@ -656,12 +683,13 @@ input:checked + .slider:before {
 }
 
 .Luminatesektion {
-  height: 50%; /* fylder halvdelen af siden i højden */
+  height: auto;
   display: flex;
   justify-content: center; /* I midten horisontalt */
   align-items: center; /* i midten vertikalt */
   background-color: var(--farve_mørkebrun);
 }
+
 .scroll {
   width: 100%;
   max-width: 100%;
@@ -680,10 +708,16 @@ input:checked + .slider:before {
 
 .scroll img {
   flex: 0 0 auto;
-  width: 345px;
-  height: 345px;
+  width: 344px;
+  height: 344px;
   margin: 10px;
   object-fit: contain;
+}
+
+.pil-højre {
+  position: relative;
+  bottom: 288px;
+  margin-left: 1364px;
 }
 /* 4. sektion slut */
 
@@ -691,8 +725,7 @@ input:checked + .slider:before {
 .footer {
   width: 100%;
   padding: 40px 80px;
-  background: var(--farve_beige);
-  color: var(--farve_mørkebrun);
+  background: var(--farve_moonlightwhite);
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */

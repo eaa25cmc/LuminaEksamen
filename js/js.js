@@ -103,4 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 /*Feature sektion slutter*/

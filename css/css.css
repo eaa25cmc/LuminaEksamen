@@ -93,11 +93,15 @@ h1 {
 /* Influencer – day */
 .h3-influencer-day {
   color: var(--farve_mørkeorange);
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 /* Influencer – night */
 .h3-influencer-night {
   color: var(--farve_orange);
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 /*lumina audio logo hero*/
@@ -140,9 +144,11 @@ h1 {
 }
 .h4-influencer--day {
   color: var(--farve_mørkeorange);
+  margin-top: 8px;
 }
 .h4-influencer--night {
   color: var(--farve_orange);
+  margin-top: 8px;
 }
 .h4-pris--day {
   color: var(--farve_moonlightwhite);
@@ -180,9 +186,11 @@ h1 {
 }
 .h5-influencer--day {
   color: var(--farve_mørkeorange);
+  margin-bottom: 8px;
 }
 .h5-influencer--night {
   color: var(--farve_orange);
+  margin-bottom: 8px;
 }
 .h5-multi2--night {
   color: var(--farve_moonlightwhite);
@@ -206,23 +214,23 @@ h1 {
 /* Farvevarianter */
 .h6-underoverskrifterFeatures--night {
   color: var(--farve_moonlightwhite);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--night:hover {
   color: var(--farve_beige);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--day {
   color: var(--farve_mørkebrun);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-underoverskrifterFeatures--day:hover {
   color: var(--farve_brun);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .h6-footerOverskrift--day {
   color: var(--farve_moonlightwhite);
@@ -272,9 +280,13 @@ h1 {
 }
 .p-influencerBrødtekst--day {
   color: var(--farve_mørkeorange);
+  max-width: 688px;
+  margin-bottom: 8px;
 }
 .p-influencerBrødtekst--night {
   color: var(--farve_orange);
+  max-width: 688px;
+  margin-bottom: 8px;
 }
 .p-brødtekst--night {
   color: var(--farve_moonlightwhite);
@@ -434,6 +446,13 @@ input:checked + .slider:before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.pil-ned {
+  position: absolute;
+  margin-left: 40px;
+  bottom: 128px;
+}
+
 /* 1. sektion slutter */
 
 /* CTA i sektion 1 og 2*/
@@ -469,9 +488,8 @@ input:checked + .slider:before {
 /* 2. sektion med produkt starter */
 #sektionProdukt {
   width: 100%;
-  height: 800px;
+  height: 704px;
   background-color: var(--farve_moonlightwhite);
-  color: var(--farve_mørkebrun);
 }
 
 .container-a {
@@ -479,7 +497,7 @@ input:checked + .slider:before {
   justify-content: center; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
   gap: 216px; /* afstand mellem billede og tekst */
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .billede1 {
@@ -559,10 +577,10 @@ input:checked + .slider:before {
   margin-right: 88px;
   cursor: pointer;
 }
+
 .video {
   width: auto;
   height: 672px;
-  display: block;
   border-radius: 90px; /* runder hjørner */
   overflow: hidden; /* gør at indholdet bliver klippet */
   object-fit: cover;
@@ -578,7 +596,7 @@ input:checked + .slider:before {
 .featureText {
   display: none;
   margin-top: 8px;
-  margin-bottom: 16px; /* afstand TIL næste linje */
+  margin-bottom: 32px; /* afstand TIL næste linje */
   max-height: 0;
   overflow: hidden;
   padding-left: 40px;
@@ -633,14 +651,24 @@ input:checked + .slider:before {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.day-node-billede {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
 /* 3. sektion slutter */
 
 /* 4. sektion med influencer Luminate yourself starter */
 #LuminateYourselfSektion {
   width: 100%;
-  height: 744px;
+  max-height: 744px;
+  margin-top: 8px;
+  margin-bottom: 24px;
   background-color: var(--farve_moonlightwhite);
 }
+
 .SHARE {
   display: flex;
   flex-direction: column;
@@ -653,7 +681,7 @@ input:checked + .slider:before {
 }
 
 .Luminatesektion {
-  height: 50%; /* fylder halvdelen af siden i højden */
+  height: auto;
   display: flex;
   justify-content: center; /* I midten horisontalt */
   align-items: center; /* i midten vertikalt */
@@ -678,10 +706,16 @@ input:checked + .slider:before {
 
 .scroll img {
   flex: 0 0 auto;
-  width: 345px;
-  height: 345px;
+  width: 344px;
+  height: 344px;
   margin: 10px;
   object-fit: contain;
+}
+
+.pil-højre {
+  position: relative;
+  bottom: 288px;
+  margin-left: 1364px;
 }
 /* 4. sektion slutter */
 
