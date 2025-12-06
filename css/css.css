@@ -23,12 +23,6 @@ body {
   overflow-x: hidden; /* forhindrer scroll ud af skærmview */
 }
 
-/* Standard afstand mellem sektionerne */
-#sektionFeatures,
-#LuminateYourselfSektion {
-  margin-top: 400px;
-}
-
 /* Design system */
 
 /* Farver */
@@ -41,8 +35,6 @@ body {
   --farve_brun: #65371f;
   --farve_orange: #c97338;
 }
-
-/* Design system */
 
 /* Tekst udseende*/
 /* .jura-<uniquifier> {
@@ -214,21 +206,31 @@ h1 {
 /* Farvevarianter */
 .h6-underoverskrifterFeatures--night {
   color: var(--farve_moonlightwhite);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .h6-underoverskrifterFeatures--night:hover {
   color: var(--farve_beige);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .h6-underoverskrifterFeatures--day {
   color: var(--farve_mørkebrun);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .h6-underoverskrifterFeatures--day:hover {
   color: var(--farve_brun);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .h6-footerOverskrift--day {
   color: var(--farve_moonlightwhite);
+  margin-bottom: 8px;
 }
 .h6-footerOverskrift--night {
   color: var(--farve_mørkebrun);
+  margin-bottom: 8px;
 }
 
 /*p*/
@@ -249,18 +251,24 @@ h1 {
 .p-footerRating--night {
   color: var(--farve_moonlightwhite);
   cursor: pointer;
+  margin-top: 24px;
 }
 .p-footerRating--night:hover {
   color: var(--farve_beige);
   cursor: pointer;
+  margin-top: 24px;
 }
 .p-footerRating--day {
   color: var(--farve_mørkebrun);
   cursor: pointer;
+  margin-bottom: 32px;
+  margin-top: 0;
 }
 .p-footerRating--day:hover {
   color: var(--farve_brun);
   cursor: pointer;
+  margin-bottom: 32px;
+  margin-top: 0;
 }
 .p-influencerBrødtekst--day {
   color: var(--farve_mørkeorange);
@@ -274,9 +282,9 @@ h1 {
 .p-brødtekst--day {
   color: var(--farve_mørkebrun);
 }
+/* Design system slutter */
 
-/* Hero start */
-
+/* Header starter*/
 header {
   position: absolute;
   background-color: transparent;
@@ -320,7 +328,9 @@ header {
   align-items: center;
   gap: 16px;
 }
+/* Header slutter*/
 
+/* 1. sektion med hero starter */
 .HeroSektion {
   position: relative;
   height: 800px;
@@ -339,42 +349,11 @@ header {
   width: 523px;
   margin-left: 160px;
   margin-top: 104px;
-  color: var(--farve_moonlightwhite);
 }
 
 .heroundertekst {
   height: 92px;
   width: 523px;
-  margin-top: 8px;
-}
-
-.button1,
-.button-button2 {
-  margin-top: 32px;
-  background-color: var(--farve_mørkebrun);
-  border: none;
-  color: var(--farve_moonlightwhite);
-  padding: 16px 24px;
-  text-align: center;
-  font-family: "jura", sans-serif;
-  font-weight: 700; /*bold*/
-  font-size: 16px;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 40px; /*kanterne bliver af*/
-}
-
-/* Knap hover effekter */
-.button1:hover {
-  background-color: var(--farve_brun);
-  color: var(--farve_beige);
-  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
-}
-
-.button-button2:hover {
-  background-color: var(--farve_brun);
-  color: var(--farve_beige);
-  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
 }
 
 /*day/night slider*/
@@ -448,23 +427,74 @@ input:checked + .slider:before {
 
 /* Placering af slider under hero tekst */
 #slider {
-  height: 300px;
   margin: 0;
   position: absolute;
-  top: 92%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+/* 1. sektion slutter */
 
-/* Hero slut */
+/* CTA i sektion 1 og 2*/
+.button1,
+.button-button2 {
+  margin-top: 32px;
+  background-color: var(--farve_mørkebrun);
+  border: none;
+  color: var(--farve_moonlightwhite);
+  padding: 16px 24px;
+  text-align: center;
+  font-family: "jura", sans-serif;
+  font-weight: 700; /*bold*/
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 40px; /*kanterne bliver afrundet */
+}
 
-/* 1. Sektion*/
+/* Knap hover effekter */
+.button1:hover {
+  background-color: var(--farve_brun);
+  color: var(--farve_beige);
+  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
+}
+
+.button-button2:hover {
+  background-color: var(--farve_brun);
+  color: var(--farve_beige);
+  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
+}
+
+/* 2. sektion med produkt starter */
 #sektionProdukt {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-color: var(--farve_moonlightwhite);
   color: var(--farve_mørkebrun);
+}
+
+.container-a {
+  display: flex; /* aktiverer flexbox */
+  justify-content: center; /* centrerer indhold vandret */
+  align-items: center; /* centrerer vertikalt (valgfrit) */
+  gap: 216px; /* afstand mellem billede og tekst */
+  margin-top: 80px;
+}
+
+.billede1 {
+  width: 388px;
+  height: auto;
+  display: block;
+  border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
+}
+
+.luminadagen {
+  max-width: 440px;
+}
+.stjerner {
+  margin-top: 16px;
+  margin-left: -8px;
 }
 
 #farvePrikker {
@@ -486,22 +516,6 @@ input:checked + .slider:before {
   height: 24px;
 }
 
-.billede1 {
-  flex: 0 0 30%; /* billedet tager 25% af bredden */
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.container-a {
-  display: flex; /* aktiverer flexbox */
-  justify-content: center; /* centrerer indhold vandret */
-  align-items: center; /* centrerer vertikalt (valgfrit) */
-  gap: 200px; /* afstand mellem billede og tekst */
-  min-height: 100vh; /* så det kan centreres lodret */
-}
-
 .farvevalg {
   display: flex;
   justify-content: space-between;
@@ -511,49 +525,43 @@ input:checked + .slider:before {
   margin: 0;
 }
 
-/*afrunding af hjørner på højtaler*/
-.container-a img {
-  border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
-}
-
 /*Mellemrum mellem knap og pris*/
 .button-button2 {
   margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
 }
+
 .tekst {
-  margin-left: 336px; /* Tilføjer mellemrum */
+  margin-left: 200px; /* Tilføjer mellemrum */
   font-family: "jura", sans-serif;
   font-weight: 700; /*bold*/
   font-size: 16px;
   color: var(--farve_mørkebrun);
 }
 
-/*Vandrette linjer i både sektion 1, 2 og 3*/
-.vandret-linje {
+.vandret-linje1 {
   border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
-  width: 566px;
+  width: 440px;
 }
+/* 2. sektion slutter */
 
-/* 2. Sektion */
+/* 3. sektion med features starter */
 #sektionFeatures {
   width: 100%;
-  height: 700px;
+  height: 1088px;
   background-color: var(--farve_moonlightwhite);
-  color: var(--farve_mørkebrun);
 }
 
-.flex-container {
+.tekst-video {
   display: flex; /* aktiverer flexbox */
-  justify-content: space-between; /* centrerer indhold vandret */
   align-items: center; /* centrerer vertikalt (valgfrit) */
-  gap: 80px; /* afstand mellem billede og tekst */
+  gap: 104px; /* afstand mellem billede og tekst */
   margin-left: 88px;
   margin-right: 88px;
   cursor: pointer;
 }
-.video-content {
-  width: 500px;
-  height: 620px;
+.video {
+  width: auto;
+  height: 672px;
   display: block;
   border-radius: 90px; /* runder hjørner */
   overflow: hidden; /* gør at indholdet bliver klippet */
@@ -570,7 +578,7 @@ input:checked + .slider:before {
 .featureText {
   display: none;
   margin-top: 8px;
-  margin-bottom: 32px; /* afstand TIL næste linje */
+  margin-bottom: 16px; /* afstand TIL næste linje */
   max-height: 0;
   overflow: hidden;
   padding-left: 40px;
@@ -619,9 +627,18 @@ input:checked + .slider:before {
   margin-right: 208px; /* tekst → plus ikon */
 }
 
-/*Sektion 3 Luminate yourself */
+.vandret-linje2 {
+  border-bottom: 1px solid var(--farve_mørkebrun); /* Opret en sort linje */
+  width: 566px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/* 3. sektion slutter */
 
+/* 4. sektion med influencer Luminate yourself starter */
 #LuminateYourselfSektion {
+  width: 100%;
+  height: 744px;
   background-color: var(--farve_moonlightwhite);
 }
 .SHARE {
@@ -643,7 +660,7 @@ input:checked + .slider:before {
   background-color: var(--farve_moonlightwhite);
 }
 
-.karrusel {
+.scroll {
   width: 100%;
   max-width: 100%;
   height: 450px;
@@ -653,80 +670,41 @@ input:checked + .slider:before {
   overflow-y: hidden;
 }
 
-.karrusel .slides {
+.scroll .scroll-elementer {
   display: flex;
   width: max-content;
   height: 450px;
 }
 
-.karrusel img {
+.scroll img {
   flex: 0 0 auto;
   width: 345px;
   height: 345px;
   margin: 10px;
   object-fit: contain;
 }
+/* 4. sektion slutter */
 
-/*Footer*/
-
+/* Footer starter */
 .footer {
-  margin-top: 50px;
   width: 100%;
-  padding: 100px 5%;
+  padding: 40px 80px;
   background: var(--farve_mørkebrun);
   color: var(--farve_moonlightwhite);
-}
 
-.footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
-  gap: 60px; /* Sætter et 50px mellemrum mellem kolonner og rækker */
 }
 
-.col-3 {
-  flex-grow: 2;
-}
-
-.footer div .h6-underoverskrifterFeatures--day {
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-.col-1 a {
-  display: block;
-  text-decoration: none;
-  color: var(--farve_moonlightwhite);
-  margin-bottom: 15px;
-}
-
-.col-2 a {
-  display: block;
-  text-decoration: none;
-  color: var(--farve_moonlightwhite);
-  margin-bottom: 15px;
-}
-
-.col-3 a {
-  display: block;
-  text-decoration: none;
-  color: var(--farve_moonlightwhite);
-  margin-bottom: 15px;
-}
-
-.col-4 a {
-  display: block;
-  height: 600px;
-  text-decoration: none;
-  color: var(--farve_moonlightwhite);
-  margin-bottom: 15px;
+.col-4 {
+  display: flex;
+  flex-direction: column;
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-top: 600px;
-  margin-right: 104px;
+  margin-top: auto; /* skubber copyright ned i bunden af kolonnen */
 }
+/* footer slutter*/
 
 /* Define variables in the :root */
 
