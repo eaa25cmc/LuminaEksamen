@@ -566,8 +566,7 @@ input:checked + .slider {
   display: flex; /* gør video og tekstområde liggende ved siden af hinanden */
   align-items: center; /* centrerer vertikalt */
   gap: 104px; /* afstand mellem video og tekst */
-  margin-left: 88px;
-  margin-right: 88px;
+  margin-left: 128px;
 }
 
 .video {
