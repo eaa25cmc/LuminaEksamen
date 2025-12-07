@@ -1,6 +1,6 @@
 /**
- * file: css/css.css
- * purpose: styling
+ * file: css/darkmode.css
+ * purpose: styling i darkmode + fælles typografi (day/night)
  **/
 
 /* Remove whitespace on top of certain browsers */
@@ -37,17 +37,6 @@ body {
 }
 
 /* Tekst udseende*/
-/* .jura-<uniquifier> {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;} */
-
-/* font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal; */
-
 /*h1
 Herooverskrift*/
 h1 {
@@ -65,7 +54,7 @@ h1 {
   font-size: 32px;
 }
 
-/*Overskrifter i sektioner*/
+/* Varianter af Overskrifter i sektioner*/
 .h2-day {
   color: var(--farve_mørkebrun);
 }
@@ -84,8 +73,8 @@ h1 {
   font-weight: 600; /* semibold */
   font-size: 32px;
 }
-
-/*underoverskrift (hero)*/
+/* Varianter */
+/* underoverskrift (hero)*/
 .h3-hero-underoverskrift {
   color: var(--farve_moonlightwhite);
 }
@@ -129,7 +118,7 @@ h1 {
   font-size: 16px;
 }
 
-/* Farvevarianter */
+/* Varianter */
 .h4-ctaDropdown--day {
   color: var(--farve_moonlightwhite);
 }
@@ -171,7 +160,7 @@ h1 {
   font-size: 16px;
 }
 
-/* Farvevarianter */
+/* Varianter */
 .h5-multi--day {
   color: var(--farve_moonlightwhite);
 }
@@ -211,7 +200,7 @@ h1 {
   font-size: 24px;
 }
 
-/* Farvevarianter */
+/* Varianter */
 .h6-underoverskrifterFeatures--night {
   color: var(--farve_moonlightwhite);
   margin-top: 24px;
@@ -255,7 +244,7 @@ h1 {
   font-size: 16px;
 }
 
-/* Farvevarianter */
+/* Varianter */
 .p-footerRating--night {
   color: var(--farve_moonlightwhite);
   cursor: pointer;
@@ -294,165 +283,166 @@ h1 {
 .p-brødtekst--day {
   color: var(--farve_mørkebrun);
 }
-
 /* Design system slutter*/
 
 /* Header */
+/* Header placeres øverst og ligger ovenpå hero-billedet */
 header {
-  position: absolute;
+  position: absolute; /* gør at headeren flyder ovenpå hero */
   background-color: transparent;
   top: 0;
-  width: 100%;
+  width: 100%; /* fuld bredde */
   padding-left: 32px;
   padding-right: 32px;
-  z-index: 10;
+  z-index: 10; /* sikre at header ligger over alt andet, da Z=dybden*/
   box-sizing: border-box;
 }
 
+/* Navigation container – fordeler menu, logo og ikoner */
 #topNav {
-  display: flex;
+  display: flex; /* gør elementerne vandrette */
   position: relative;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* menu til venstre, ikoner til højre */
+  align-items: center; /* centrerer elementer vertikalt */
   padding-top: 40px;
 }
 
+/* Menuikon (burger-menu) i venstre side */
 .menu {
-  justify-content: flex;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
+/* Logo placeres i midten vha. absolute positioning */
 #TopLogo {
-  position: absolute;
+  position: absolute; /* gør at logoet kan centreres uafhængigt */
   display: flex;
   align-items: center;
-  top: 32px;
-  margin-left: 560px;
+  top: 32px; /* afstand ned fra toppen af headeren */
+  margin-left: 560px; /* manuel justering til centrering af logo */
 }
 
+/* Logoets størrelse */
 #TopLogo img {
   height: 97px;
   width: 236px;
 }
 
+/* ikoner i højre side */
 .ikoner {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  align-items: center; /* vertikal centrering */
+  gap: 16px; /* afstand mellem ikonerne */
 }
+
 /* Header slutter*/
 
 /* 1. sektion hero*/
 .HeroSektion {
-  position: relative;
+  position: relative; /* gør at indre elementer kan placeres relativt til sektionen */
   height: 800px;
 
   /* Herobilledet i baggrunden*/
   background-image: url("../images/billeder-fra-figma/herodark.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding-top: 200px;
+  background-attachment: fixed; /* Billedet bliver hvor det er*/
+  background-size: cover; /* billedet dækker hele sektionen */
+  padding-top: 200px; /* gør at billede også dækker header */
   color: var(--farve_moonlightwhite);
 }
 
 .HeroTekst {
-  height: 142px;
+  height: 142px; /* højde til tekst-container */
   width: 523px;
-  margin-left: 160px;
-  margin-top: 104px;
+  margin-left: 160px; /* placerer teksten til venstre i layoutet */
+  margin-top: 104px; /* afstand fra top af hero-sektion */
 }
 
 .heroundertekst {
-  height: 92px;
+  height: 92px; /* højde til underoverskrift-container */
   width: 523px;
 }
 
-/* The switch - the box around the slider */
+/* day/night slider wrapper */
 .switch {
-  position: relative;
-  display: inline-block;
+  position: relative; /* gør det muligt at placere slider relativt */
+  display: inline-block; /* så elementet kun fylder sit indhold */
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
+  opacity: 0; /* checkboxen er usynlig, men stadig klikbar */
 }
 
-/* Slideren */
+/* Slideren (det synlige element) */
 .slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; /* afstand mellem tekst */
-  padding: 8px 16px;
-  background-color: var(--farve_mørkebrun);
+  position: relative; /* nødvendigt for før-elementet (cirklen) */
+  display: flex; /* gør det muligt at placere tekst og cirkel side om side */
+  align-items: center; /* centrerer indhold vertikalt */
+  justify-content: center; /* centrerer tekst horisontalt */
+  gap: 8px; /* afstand mellem tekst og cirkel */
+  padding: 8px 16px; /* indre afstand */
+  background-color: var(--farve_moonlightwhite); /* Baggrund i night mode*/
   cursor: pointer;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-out; /* glidende animation når der skiftes tilstand */
+}
+
+.slider:hover {
+  background-color: var(--farve_beige);
 }
 
 /* Teksten inde i slideren */
 .slider .h5-multi--day,
 .slider .h5-multi--night {
-  margin: 0; /* ingen ekstra margin omkring teksten */
+  margin: 0; /* nulstiller margin så teksten står præcist */
   order: 0; /* sørger for at teksten kommer først */
 }
 
 /* Cirklen inde i slider */
 .slider:before {
-  position: relative;
-  content: "";
-  height: 24px;
-  width: 24px;
-  background-color: var(--farve_mørkebrun);
-  transition: 0.4s ease-out;
+  position: relative; /* holder cirklen inden i slideren */
+  content: ""; /* før-element skal have indhold for at vises */
+  height: 24px; /* cirklens højde */
+  width: 24px; /* Cirklens bredde */
+  background-color: var(--farve_mørkebrun); /* Cirklens farve*/
+  transition: 0.4s ease-out; /* smooth toggle-animation */
   order: 1; /* sørger for at cirklen kommer efter teksten */
   margin-left: 8px; /* afstand mellem cirklen og teksten */
 }
 
-/* Når slideren er tjekket */
+/* Når slideren er tjekket aktiveres (night mode) */
 input:checked + .slider {
-  background-color: var(--farve_moonlightwhite);
-  cursor: pointer;
+  background-color: var(
+    --farve_moonlightwhite
+  ); /* sliderens baggrund forbliver lys */
 }
 
-input:checked + .slider:hover {
-  background-color: var(--farve_beige);
-}
-
-/* Når slideren er i fokus */
-input:focus + .slider {
-  box-shadow: 0 0 5px var(--farve_mørkebrun);
-}
-
-/* Flyt cirklen når slideren er tjekket */
-input:checked + .slider:before {
-  transform: none;
-}
-
-/* Runde sliders */
+/* Runde sliders hjørner */
 .slider.round {
   border-radius: 40px;
 }
 
-/* Runde cirkler inde i slider */
+/* Rund cirkel inde i slider */
 .slider.round:before {
   border-radius: 50%;
 }
 
-/* Placering af slider under hero tekst */
+/* Placering af slider i hero sektion */
 #slider {
   margin: 0;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: absolute; /* fri placering i heroen */
+  top: 80%; /* placeret 80% nede i heroen */
+  left: 50%; /* centreret horisontalt */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* centrerer præcist slideren omkring midten */
 }
 
+/* Pil ned-ikonet i bunden af hero */
 .pil-ned {
-  position: absolute;
+  position: absolute; /* fri placering af pilen */
   margin-left: 40px;
   bottom: 128px;
 }
@@ -462,24 +452,21 @@ input:checked + .slider:before {
 .button1,
 .button-button2 {
   margin-top: 32px;
-  background-color: var(--farve_moonlightwhite);
+  background-color: var(--farve_moonlightwhite); /* lys baggrund i day mode */
   border: none;
-  color: var(--farve_brun);
-  padding: 16px 24px;
-  text-align: center;
+  color: var(--farve_brun); /* mørk tekstfarve for kontrast */
+  padding: 16px 24px; /* indre afstand — gør knappen større */
+  text-align: center; /* centrerer knaptekst */
   font-family: "jura", sans-serif;
   font-weight: 700; /*bold*/
   font-size: 16px;
-  display: inline-block;
+  display: inline-block; /* knappen fylder kun dens indhold */
   cursor: pointer;
   border-radius: 40px; /*kanterne bliver afrundet*/
 }
-.button1:hover {
-  background-color: var(--farve_beige);
-  color: var(--farve_mørkebrun);
-  box-shadow: var(--farve_mørkebrun) 1px 1px 4px;
-}
 
+/* Knap hover effekter */
+.button1:hover,
 .button-button2:hover {
   background-color: var(--farve_beige);
   color: var(--farve_mørkebrun);
@@ -488,61 +475,64 @@ input:checked + .slider:before {
 
 /* 2. Sektion produkt*/
 #sektionProdukt {
-  width: 100%;
-  height: 704px;
-  background-color: var(--farve_mørkebrun);
+  width: 100%; /* sektionen fylder hele bredden */
+  height: 704px; /* fast højde på sektionen */
 }
 
 .container-a {
   display: flex; /* aktiverer flexbox */
-  justify-content: center; /* centrerer indhold vandret */
-  align-items: center; /* centrerer vertikalt (valgfrit) */
+  justify-content: center; /* centrerer billede og tekst vandret */
+  align-items: center; /* centrerer vertikalt */
   gap: 216px; /* afstand mellem billede og tekst */
   margin-top: 40px;
 }
-/*placering af billede*/
+
+/*placering af produktbillede*/
 .billede1 {
   width: 388px;
-  height: auto;
-  display: block;
+  height: auto; /* sikrer korrekt proportioner */
   border-radius: 90px; /* Juster denne værdi for at ændre rundingen */
 }
 
+/* Tekstkolonnen */
 .luminanight {
-  max-width: 440px;
+  max-width: 440px; /* begrænser tekstbredden for læsbarhed */
 }
 
+/* Stjerner under produktet */
 .stjerner {
   margin-top: 16px;
-  margin-left: -8px;
+  margin-left: -8px; /*så stjerner flugter med tekst */
 }
 
+/* Container til farveprikker (JS indsætter prikkene) */
 #farvePrikker {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  display: flex; /* lægger prikker vandret */
+  gap: 8px; /* afstand mellem prikker */
+  align-items: center; /* centrerer prikkerne vertikalt */
 }
 
+/* Standard farveprik */
 .farvePrik {
-  width: 16px;
+  width: 16px; /* lille prik */
   height: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s; /* smooth animation ved hover/valg */
   display: block;
 }
 
+/* Når en farve er valgt */
 .farvePrik.valgt {
-  width: 24px;
+  width: 24px; /* gør prikken større når den er valgt */
   height: 24px;
 }
 
+/* Container for farve-navn + farveprikker */
 .farvevalg {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  padding: 0;
-  margin: 0;
+  display: flex; /* lægger tekst + prikker vandret */
+  justify-content: space-between; /* sikrer afstand mellem dem */
+  align-items: center; /* centreret vertikalt */
+  height: 48px; /* fast højde for konsistent layout */
 }
 
 /*Mellemrum mellem knap og pris*/
@@ -550,114 +540,105 @@ input:checked + .slider:before {
   margin-right: 10px; /* Tilføjer 10 pixels mellemrum */
 }
 
+/* Pris-teksten */
 .tekst {
-  margin-left: 200px; /* Tilføjer mellemrum */
+  margin-left: 200px; /* rykker prisen til højre for knappen */
   font-family: "jura", sans-serif;
   font-weight: 700; /*bold*/
   font-size: 16px;
   color: var(--farve_moonlightwhite);
 }
 
+/* Vandret linje i sektionen */
 .vandret-linje1 {
-  border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en sort linje */
-  width: 440px;
-  margin: 0px;
+  border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en hvid linje */
+  width: 440px; /* fast længde */
 }
 /* 2. sektion slut */
 
 /* 3. Sektion med features */
 #sektionFeatures {
   width: 100%;
-  height: 1088px;
-  background-color: var(--farve_mørkebrun);
+  height: 1088px; /* fast højde */
 }
 
 .tekst-video {
-  display: flex; /* aktiverer flexbox */
-  align-items: center;
+  display: flex; /* gør video og tekstområde liggende ved siden af hinanden */
+  align-items: center; /* centrerer vertikalt */
   gap: 104px; /* afstand mellem video og tekst */
   margin-left: 88px;
   margin-right: 88px;
-  cursor: pointer;
 }
 
 .video {
-  width: auto;
+  width: 496px;
   height: 672px;
   border-radius: 90px; /* runder hjørner */
-  overflow: hidden; /* gør at indholdet bliver klippet */
-  object-fit: cover;
+  overflow: hidden; /* skjuler videoens kanter uden for containeren */
 }
 
-/*mellemrum mellem tekst og linjer*/
-/* Gør hver feature til en blok, så teksten kommer under */
-.feature {
-  display: block;
-}
-
-/* skjult tekst */
+/* Teksten der foldes ud når man klikker */
 .featureText {
-  display: none;
+  display: none; /* skjult til at starte med */
   margin-top: 8px;
   margin-bottom: 32px; /* afstand TIL næste linje */
-  max-height: 0;
   overflow: hidden;
   padding-left: 40px;
   transition: 0.3s ease;
   max-width: 486px;
 }
 
-/* når open-klassen er tilføjet */
+/* når en feature åbnest */
 .feature.open .featureText {
-  display: block;
-  max-height: 200px; /* Tekst */
+  display: block; /* gør teksten synlig */
+  max-height: 200px; /* tekstens udfoldede højde */
 }
 
-/* plus ikon roteres som minus */
-.feature.open .NPlusUhover {
-  transition: transform 0.2s ease;
-}
+/* Layout for hver feature-linje (ikon + overskrift + plus-ikon) */
 .featureSocial,
 .featureDesign,
 .featurePower,
 .featureSound {
-  display: flex;
-  align-items: center;
+  display: flex; /* gør at ikon + overskrift + plus-ikon ligger horisontalt*/
+  align-items: center; /* vertikal centrering */
   margin-inline-start: 40px;
-  gap: 8px; /* ikon → tekst afstand */
+  gap: 8px; /* afstand mellem ikon og tekst */
+  cursor: pointer;
 }
 
-/* Tekst  til plus ikon afstand */
+/* Sound tekst til plus ikon afstand */
 .featureSound h6 {
-  margin-right: 352px; /* tekst → plus ikon */
+  margin-right: 352px; /* skubber plus-ikonet helt ud til højre */
 }
 
-/* Tekst til plus ikon afstand */
+/* Design tekst til plus ikon afstand */
 .featureDesign h6 {
-  margin-right: 344px; /* tekst → plus ikon */
+  margin-right: 344px; /* skubber plus-ikonet helt ud til højre */
 }
 
-/* Tekst  til plus ikon afstand */
+/* Power tekst  til plus ikon afstand */
 .featurePower h6 {
-  margin-right: 360px; /* tekst → plus ikon */
+  margin-right: 360px; /* skubber plus-ikonet helt ud til højre */
 }
 
-/* Tekst til plus ikon afstand */
+/* Social tekst til plus ikon afstand */
 .featureSocial h6 {
-  margin-right: 208px; /* tekst → plus ikon */
+  margin-right: 208px; /* skubber plus-ikonet helt ud til højre */
 }
 
+/* Vandret linje mellem features */
 .vandret-linje2 {
-  border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en sort linje */
+  border-bottom: 1px solid var(--farve_moonlightwhite); /* Opret en hvid linje */
   width: 566px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
+/* Node img */
 .night-node-billede {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centrerer billedet i midten */
   margin-top: 48px;
 }
 /* 3. sektion slut */
@@ -665,95 +646,68 @@ input:checked + .slider:before {
 /* 4. sektion med influencer Luminate yourself */
 #LuminateYourselfSektion {
   width: 100%;
-  max-height: 744px;
+  height: 744px;
   margin-top: 8px;
   margin-bottom: 24px;
-  background-color: var(--farve_mørkebrun);
 }
 
 .SHARE {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  display: flex; /* kolonne-layout */
+  flex-direction: column; /* tekst står oven på hinanden */
+  justify-content: center; /* centrerer teksten vertikalt */
+  align-items: flex-start; /* venstrestiller tekstindholdet */
   margin-left: 50px;
-
-  color: var(--farve_orange);
-  background-color: var(--farve_mørkebrun);
 }
 
 .Luminatesektion {
-  height: auto;
-  display: flex;
+  display: flex; /* centrerer horisontalt og vertikalt */
   justify-content: center; /* I midten horisontalt */
   align-items: center; /* i midten vertikalt */
-  background-color: var(--farve_mørkebrun);
 }
 
 .scroll {
-  width: 100%;
-  max-width: 100%;
-  height: 450px;
-  background-color: var(--farve_mørkebrun);
+  width: 100%; /* scroll-området fylder hele bredden */
+  height: 450px; /* fast højde til billedrækken */
 
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: auto; /* aktiverer vandret scroll */
 }
 
 .scroll .scroll-elementer {
-  display: flex;
-  width: max-content;
-  height: 450px;
+  display: flex; /* placerer billederne vandret */
+  width: max-content; /* container vokser efter indholdets bredde */
 }
 
 .scroll img {
-  flex: 0 0 auto;
-  width: 344px;
+  flex: 0 0 auto; /* billederne må ikke krympe */
+  width: 344px; /* ens billedstørrelse */
   height: 344px;
-  margin: 10px;
-  object-fit: contain;
+  margin: 10px; /* mellemrum mellem billederne */
+  object-fit: contain; /* bevarer billedets proportioner */
 }
 
 .pil-højre {
-  position: relative;
-  bottom: 288px;
-  margin-left: 1364px;
+  position: relative; /* placerer pilen i forhold til scroll-containeren */
+  bottom: 288px; /* løfter pilen op over scroll-området */
+  margin-left: 1364px; /* skubber pilen mod højre */
 }
 /* 4. sektion slut */
 
 /*Footer*/
 .footer {
   width: 100%;
-  padding: 40px 80px;
+  padding: 40px 80px; /* indre afstand rundt om indholdet */
   background: var(--farve_moonlightwhite);
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner af lige bredde */
+  display: grid; /* grid layout giver rene kolonner */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Definerer 4 kolonner og er lige bredde */
 }
 
 .col-4 {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* kolonnen bliver fleksibel */
+  flex-direction: column; /* elementerne står lodret under hinanden */
 }
 
 .copyright {
   margin-top: auto;
 }
 /* Footer slut*/
-
-/* Define variables in the :root */
-
-/* Use your variables on elements along these lines */
-/*
-:root {
-  --contrast: lime;
-  --backgr: #000;
-}
-
---- You can use the variables like this ---
-
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
-*/
