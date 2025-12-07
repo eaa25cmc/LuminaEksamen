@@ -134,11 +134,11 @@ h1 {
 }
 .h4-influencer--day {
   color: var(--farve_mørkeorange);
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .h4-influencer--night {
   color: var(--farve_orange);
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .h4-pris--day {
   color: var(--farve_moonlightwhite);
@@ -655,7 +655,7 @@ input:checked + .slider:before {
   flex-direction: column; /* tekst står oven på hinanden */
   justify-content: center; /* centrerer teksten vertikalt */
   align-items: flex-start; /* venstrestiller tekstindholdet */
-  margin-left: 50px;
+  margin-left: 48px;
 }
 
 .Luminatesektion {
@@ -667,6 +667,7 @@ input:checked + .slider:before {
 .scroll {
   width: 100%; /* scroll-området fylder hele bredden */
   height: 450px; /* fast højde til billedrækken */
+  margin-left: 24px;
 
   overflow-x: auto; /* aktiverer vandret scroll */
 }
@@ -680,7 +681,7 @@ input:checked + .slider:before {
   flex: 0 0 auto; /* billederne må ikke krympe */
   width: 344px; /* ens billedstørrelse */
   height: 344px;
-  margin: 10px; /* mellemrum mellem billederne */
+  margin: 16px; /* mellemrum mellem billederne */
   object-fit: contain; /* bevarer billedets proportioner */
 }
 
