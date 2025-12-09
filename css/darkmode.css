@@ -412,10 +412,10 @@ header {
 }
 
 /* Når slideren er tjekket aktiveres (night mode) */
-input:checked + .slider {
+input:checked + .slider:hover {
   background-color: var(
-    --farve_moonlightwhite
-  ); /* sliderens baggrund forbliver lys */
+    --farve_beige
+  ); /* sliderens baggrund bliver beige ved hover */
 }
 
 /* Runde sliders hjørner */

@@ -385,6 +385,7 @@ header {
   padding: 8px 16px; /* indre afstand */
   background-color: var(--farve_mørkebrun); /* baggrund i day mode */
   cursor: pointer;
+  transition: 0.4s ease-out; /* glidende animation når der skiftes tilstand */
 }
 
 .slider:hover {
